@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>NOVEL PLUS - Black Tuff</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="en_blacktuff.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="comp">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar__header">
+                <!-- Company Logo and Name -->
+                <a href="#home" class="logo-link">
+                    <div class="logo-text">
+                        <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Company Logo">
+                        <span id="logo-text">NOVEL PLUS</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="sidebar__nav">
+                <a href="#home" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-home"></i>
+                    <span class="sidebar__navText">Home</span>
+                </a>
+                <a href="#stone" class="sidebar__navItem stone-item">
+                    <i class="sidebar__navIcon fas fa-gem"></i>
+                    <span class="sidebar__navText">Stones</span>
+                </a>
+                <a href="#services" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-truck"></i>
+                    <span class="sidebar__navText">Services</span>
+                </a>
+                <a href="#concrete" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-city"></i>
+                    <span class="sidebar__navText">Concrete</span>
+                </a>
+                <a href="#about" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-info-circle"></i>
+                    <span class="sidebar__navText">About Us</span>
+                </a>
+                <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                    <i class="sidebar__navIcon fas fa-search"></i>
+                    <span class="sidebar__navText">Search</span>
+                </a>
+
+                <!-- Search Box (Hidden Initially) -->
+                <div id="searchBoxContainer" class="search-box-container">
+                    <input type="text" id="search" placeholder="Search..." oninput="showSuggestions()">
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                </div>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="language-item" id="language-item">
+                <i class="sidebar__navIcon fas fa-globe"></i>
+                <span class="sidebar__navText">Language</span>
+            </div>
+            <div class="language-dropdown" id="language-dropdown">
+                <a href="#" data-lang="hy">Հայերեն</a>
+                <a href="#" data-lang="ru">Русский</a>
+                <a class="en" href="#" data-lang="en">English</a>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <!-- First Section: Title on the Right, Image Slider on the Left -->
+            <div class="title-and-image-slider">
+                <div class="image">
+                    <img src="picture/header.jpg" alt="Completed Work 1" class="slide" id="slide1">
+                </div>
+                <div class="title-section">
+                    <h1>Black Tuff</h1>
+                    <p class="intro-description">Black tuff has high quality and special beauty. It stands out with its unique color and stylish appearance.</p>
+                    <button class="call-button" onclick="window.location.href='tel:+37444701513'">Call</button>
+                </div>
+            </div>
+    
+            <!-- Pictures of Completed Works -->
+            <div class="work-gallery">
+                <h2>Stones</h2>
+                <div class="gallery">
+                    <img src="picture/tuff1.jpg" alt="Completed Work 1">
+                    <img src="picture/tuff2.jpg" alt="Completed Work 2">
+                    <img src="picture/tuff3.jpg" alt="Completed Work 3">
+                </div>
+            </div>
+    
+            <!-- Second Description and Price -->
+            <div class="price-section">
+                <p class="description">Our stones are selected with strict criteria, highlighting the beauty and harmonious appearance of the environment. They are ideal for those who appreciate natural and expressive shades.</p>
+            </div>
+            <div class="work-gallery">
+                <h2>Completed Works</h2>
+                <div class="gallery opacity">
+                    <img src="picture/building1.heic" alt="Completed Work 1">
+                    <img src="picture/building2.jpg" alt="Completed Work 2">
+                    <img src="picture/building3.JPG" alt="Completed Work 3">
+                </div>
+            </div>
+    
+            <!-- Second Description and Price -->
+            <div class="price-section">
+                <p class="description">Black tuff has been used in these construction projects, providing unique beauty and strength, creating a modern and powerful look.</p>
+                <h3 class="ending-text">Black tuff combines beauty and strength, creating an environment that will remain irreplaceable. It will increase the value of your space and transcend the boundaries of time.</h3>
+                <a href="tel:+37444701513">
+                    <p class="price">Call for More Details</p>
+                </a>
+            </div>
+        </div>
+    
+        <div class="contact-section">
+            <div class="logo-section">
+                <!-- Make sure the image path is correct -->
+                <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+                <h3>NOVEL PLUS LLC</h3>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                    <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                    <li><strong>Address</strong>: Silikian District, 7th Street, 1/14</li> <!-- Address -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="phone">
+        <header class="header_ph">
+            <div class="logo-container_ph">
+                <!-- Wrap the logo and company name with an anchor tag -->
+                <a href="#" class="logo-link_ph">
+                    <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+                    <span class="company-name_ph">NOVEL PLUS</span>
+                </a>
+            </div>
+            <div class="search-container_ph">
+                <input type="text" id="search_ph" placeholder="Search..." class="search-bar_ph" />
+                <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+            </div>
+                    
+            <div class="language-item_ph nav-button_ph" id="language-item_ph">
+                <i class="sidebar__navIcon_ph fas fa-globe"></i>
+            </div>
+        </header>
+    
+        <div class="language-dropdown_ph" id="language-dropdown_ph">
+            <a href="#" data-lang="hy">Հայերեն</a>
+            <a href="#" data-lang="ru">Русский</a>
+            <a class="en_ph" href="#" data-lang="en">English</a>
+        </div>
+    
+        <main class="main-content_ph">
+            <!-- Tuff content -->
+            <div class="content-container_ph">
+                <!-- First Section: Title on the Right, Image Slider on the Left -->
+                <div class="title-and-image-slider_ph">
+                    <div class="image_ph">
+                        <img src="picture/header.jpg" alt="Completed Work 1" class="slide_ph">
+                    </div>
+                    <div class="title-section_ph">
+                        <h1>Black Tuff</h1>
+                        <p class="intro-description_ph">Black tuff has high quality and special beauty. It stands out with its unique color and stylish appearance.</p>
+                    </div>
+                    <button class="call-button_ph" onclick="window.location.href='tel:+37444701513'">Call</button>
+                </div>
+            
+                <!-- Pictures of Completed Works -->
+                <div class="work-gallery_ph">
+                    <h2>Stones</h2>
+                    <div class="gallery_ph">
+                        <img src="picture/tuff1.jpg" alt="Completed Work 1">
+                        <img src="picture/tuff2.jpg" alt="Completed Work 2">
+                        <img src="picture/tuff3.jpg" alt="Completed Work 3">
+                    </div>
+                </div>
+            
+                <!-- Second Description and Price -->
+                <div class="price-section_ph">
+                    <p class="description_ph">Our stones are selected with strict criteria, highlighting the beauty and harmonious appearance of the environment. They are ideal for those who appreciate natural and expressive shades.</p>
+                </div>
+                <div class="work-gallery_ph">
+                    <h2>Completed Restorations</h2>
+                    <div class="gallery_ph">
+                        <img src="picture/building1.heic" alt="Completed Work 1">
+                        <img src="picture/building2.jpg" alt="Completed Work 2">
+                        <img src="picture/building3.JPG" alt="Completed Work 3">
+                    </div>
+                </div>
+            
+                <!-- Second Description and Price -->
+                <div class="price-section_ph">
+                    <p class="description_ph">Black tuff has been used in these construction projects, providing unique beauty and strength, creating a modern and powerful look.</p>
+                    <h3 class="ending-text_ph">Black tuff combines beauty and strength, creating an environment that will remain irreplaceable. It will increase the value of your space and transcend the boundaries of time.</h3>
+                    <a href="tel:+37444701513">
+                        <p class="price_ph">Call for More Details</p>
+                    </a>                    
+                </div>
+            </div>
+    
+            <div class="contact-section_ph">
+                <div class="logo-section_ph">
+                    <!-- Make sure the image path is correct -->
+                    <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+                    <h3>NOVEL PLUS LLC</h3>
+                </div>
+                <div class="contact-info_ph">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                        <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                        <li><strong>Address</strong>: Silikian District, 7th Street, 1/14</li> <!-- Address -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+    
+        <nav class="bottom-nav_ph">
+            <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+            <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+            <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+            <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+            <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+        </nav>
+    </div>
+    
+    <script src="en_blacktuff.js"></script>
+</body>
+</html>

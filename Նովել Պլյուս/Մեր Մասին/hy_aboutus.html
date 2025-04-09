@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>ՆՈՎԵԼ ՊԼՅՈՒՍ - Մեր Մասին</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="hy_aboutus.css">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <div class="comp">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <!-- Company Logo and Name -->
+            <a href="#home" class="logo-link">
+                <div class="logo-text">
+                    <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Company Logo">
+                    <span id="logo-text">ՆՈՎԵԼ ՊԼՅՈՒՍ</span>
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-home"></i>
+                <span class="sidebar__navText">Գլխավոր</span>
+            </a>
+            <a href="#stone" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-gem"></i>
+                <span class="sidebar__navText">Քարեր</span>
+            </a>
+            <a href="#services" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-truck"></i>
+                <span class="sidebar__navText">Ծառայություններ</span>
+            </a>
+            <a href="#concrete" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-city"></i>
+                <span class="sidebar__navText">Բետոն</span>
+            </a>
+            <a href="#about" class="sidebar__navItem aboutus-item">
+                <i class="sidebar__navIcon fas fa-info-circle"></i>
+                <span class="sidebar__navText">Մեր մասին</span>
+            </a>
+            <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                <i class="sidebar__navIcon fas fa-search"></i>
+                <span class="sidebar__navText">Որոնել</span>
+            </a>
+
+            <!-- Search Box (Hidden Initially) -->
+            <div id="searchBoxContainer" class="search-box-container">
+                <input type="text" id="search" placeholder="Որոնել..." oninput="showSuggestions()">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        
+        
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-item" id="language-item">
+            <i class="sidebar__navIcon fas fa-globe"></i>
+            <span class="sidebar__navText">Լեզու</span>
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <a class="hy" href="#" data-lang="hy">Հայերեն</a>
+            <a href="#" data-lang="ru">Русский</a>
+            <a href="#" data-lang="en">English</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="main-header">
+            <h1 class="content-title">Մեր Կազմակերպությունը</h1>
+            <p>առաջարկում է բարձր որակի քարեր, բետոն, կոնկրետ ծառայություններ և եզակի նախագծեր՝ հիմնված մեր փորձի և աշխատանքի վրա:</p>
+        </div>
+          <section class="done-works py-10">
+            <h2 class="text-center text-gold">Կատարված Աշխատանքներ</h2>
+            <div class="gallery">
+              <div class="work-item">
+                <img src="picture/building9.jpg" alt="Work 1"/>
+              </div>
+              <div class="work-item">
+                <p class="content-text">Մեր ընկերությունը կրել է մեծ հաջողություններ՝ իրականացնելով բարձրորակ նախագծեր՝ շենքերի և այլ կառույցների շինարարության մեջ։ Մենք աշխատել ենք, ապահովելով ամուր և երկարատև լուծումներ։ Յուրաքանչյուր նախագիծ իրականացրել ենք մեծ ուշադրությամբ, հոգալով թե մանրամասները, թե հաճախորդի հատուկ պահանջները։</p>
+              </div>
+              <div class="work-item">
+                <p class="content-text">Աշխատանքներում կիրառվող ամենատարածված տեխնոլոգիաներն ու մեր մոտեցումները ապահովում են ոչ միայն կառուցվածքների բարձր ամրություն, այլև դրանց երկարատև օգտագործումը։ Մենք տրամադրում ենք բարձրորակ քարեր շինարարության համար՝ ապահովելով գեղեցիկ և ամուր կառույցներ։</p>
+              </div>
+              <div class="work-item">
+                <img src="picture/building2.jpg" alt="Work 2"/>
+              </div>  
+            </div>
+            <div class="image-container">
+                <img src="picture/building1.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+                <img src="picture/building4.heic" alt="Little 2" class="content-little-pic scroll-effect">
+                <img src="picture/building7.heic" alt="Little 3" class="content-little-pic scroll-effect">
+                <img src="picture/building10.heic" alt="Little 4" class="content-little-pic scroll-effect">
+            </div>    
+          </section>
+          <section class="done-works py-10">
+            <h2 class="text-center text-gold">Հատակների Քարե Երեսապատում</h2>
+            <div class="image-container-stones">
+                <img src="picture/hoe1.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+                <img src="picture/hoe4.HEIC" alt="Little 2" class="content-little-pic scroll-effect">
+                <img src="picture/hoe2.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+            </div>    
+            <p class="container-text">Մեր քարերը նաև իդեալական են հատակների խճանկարների և երեսապատման համար։ Մեր քարերը դեկորատիվ լուծումներ են տալիս, որոնք ապահովում են ինչպես տեսողական հաճույք, այնպես էլ երկարատև դիմադրություն։</p>
+          </section>
+          <h2 class="text-center text-gold">Գերեզմանատներ</h2>
+          <section class="pictures-section">
+          <div class="left-part">
+            <img src="picture/building8.jpg" alt="Work 1" class="left-image"/>
+          </div>
+          <div class="right-part">
+                <img src="picture/stone1.jpg" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone2.jpg" alt="Little 2" class="right-pic scroll-effect">
+                <img src="picture/stone6.JPG" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone11.jpg" alt="Little 2" class="right-pic scroll-effect">
+            </div>              
+    </section>
+    <p class="container-text-pic">Մենք տրամադրում ենք հատուկ ընտրովի քարեր, որոնք տարբերվում են իրենց բարձր որակով և անփոփոխ գեղեցկությամբ, ապահովելով մշտական ու բնական տեսք։</p>
+
+    <section class="done-works py-10">
+        <h2 class="text-center text-gold">Ցայտաղբյուրներ</h2>
+        <div class="image-container-stones">
+            <img src="picture/fountain2.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+            <img src="picture/fountain1.jpg" alt="Little 2" class="content-little-pic scroll-effect">
+            <img src="picture/fountain3.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+        </div>    
+        <p class="container-text">Մեր ցայտաղբյուրները պատրաստվում են բարձրորակ քարերից, որոնք ապահովում են նրանց կայունությունն ու երկարատև օգտագործումը։</p>
+      </section>
+    <h2 class="text-center text-gold">Ձևավորման Քարեր</h2>
+          <section class="pictures-section">
+          <div class="left-part">
+            <img src="picture/building5.jpg" alt="Work 1" class="left-image"/>
+          </div>
+          <div class="right-part">
+                <img src="picture/stone12.heic" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone8.jpg" alt="Little 2" class="right-pic scroll-effect">
+                <img src="picture/stone3.jpg" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone4.jpg" alt="Little 2" class="right-pic scroll-effect">
+            </div>              
+    </section>
+    <p class="container-text-pic">Մենք տրամադրում ենք բարձրորակ ձևավորման քարեր, որոնք օգտագործվում են շենքերի արտաքին տեսքը բարելավելու և նրանց գեղեցկությունը ընդգծելու համար։</p>
+
+          <section class="final-thoughts py-10">
+            <h2 class="text-center text-gold">Նվազեցված Արժեքներ</h2>
+            <p class="text-center">Մենք երաշխավորում ենք որակ և առաջարկում ենք լավագույն գներ:</p>
+          </section>
+    </div>
+      
+    
+
+    <div class="contact-section">
+        <div class="logo-section">
+            <!-- Make sure the image path is correct -->
+            <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+            <h3>ՆՈՎԵԼ ՊԼՅՈՒՍ ՍՊԸ</h3>
+        </div>
+        <div class="contact-info">
+            <h2>Հետադարձ Կապ</h2>
+            <ul>
+                <li><strong>Հեռախոս</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                <li><strong>Էլ-փոստ</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                <li><strong>Հասցե</strong>: Սիլիկյան թաղամաս 7 փող. 1/14</li> <!-- Address -->
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <div class="phone">
+            <header class="header_ph">
+                <div class="logo-container_ph">
+                    <!-- Wrap the logo and company name with an anchor tag -->
+                    <a href="#" class="logo-link_ph">
+                        <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+                        <span class="company-name_ph">ՆՈՎԵԼ ՊԼՅՈՒՍ</span>
+                    </a>
+                </div>
+                <div class="search-container_ph">
+                    <input type="text" id="search_ph" placeholder="Որոնել..." class="search-bar_ph" />
+                    <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+                </div>
+                             
+                
+                <div class="language-item_ph nav-button_ph" id="language-item_ph">
+                    <i class="sidebar__navIcon_ph fas fa-globe"></i>
+                </div>
+            </header>
+        
+            <div class="language-dropdown_ph" id="language-dropdown_ph">
+                <a class="hy_ph" href="#" data-lang="hy">Հայերեն</a>
+                <a href="#" data-lang="ru">Русский</a>
+                <a href="#" data-lang="en">English</a>
+            </div>
+        <div class="content_ph">
+            <div class="main-header_ph">
+                <h1 class="content-title_ph">Մեր Կազմակերպությունը</h1>
+                <p class="main-text_ph">առաջարկում է բարձր որակի քարեր, բետոն, կոնկրետ ծառայություններ և եզակի նախագծեր՝ հիմնված մեր փորձի և աշխատանքի վրա:</p>
+            </div>
+            <section class="done-works_ph py-10_ph">
+                <h2 class="text-center_ph text-gold_ph">Կատարված Աշխատանքներ</h2>
+                <div class="gallery_ph">
+                    <div class="work-item_ph">
+                        <img src="picture/building9.jpg" alt="Work 1"/>
+                    </div>
+                    <div class="work-item_ph">
+                        <p class="content-text_ph">Մեր ընկերությունը կրել է մեծ հաջողություններ՝ իրականացնելով բարձրորակ նախագծեր՝ շենքերի և այլ կառույցների շինարարության մեջ։ Մենք աշխատել ենք, ապահովելով ամուր և երկարատև լուծումներ։ Յուրաքանչյուր նախագիծ իրականացրել ենք մեծ ուշադրությամբ, հոգալով թե մանրամասները, թե հաճախորդի հատուկ պահանջները։</p>
+                    </div>
+                    <div class="work-item_ph">
+                        <p class="content-text_ph">Աշխատանքներում կիրառվող ամենատարածված տեխնոլոգիաներն ու մեր մոտեցումները ապահովում են ոչ միայն կառուցվածքների բարձր ամրություն, այլև դրանց երկարատև օգտագործումը։ Մենք տրամադրում ենք բարձրորակ քարեր շինարարության համար՝ ապահովելով գեղեցիկ և ամուր կառույցներ։</p>
+                    </div>
+                    <div class="work-item_ph">
+                        <img src="picture/building2.jpg" alt="Work 2"/>
+                    </div>  
+                </div>
+                <div class="image-container_ph">
+                    <img src="picture/building1.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                    <img src="picture/building4.heic" alt="Little 2" class="content-little-pic_ph zoomable_ph">
+                    <img src="picture/building7.heic" alt="Little 3" class="content-little-pic_ph zoomable_ph">
+                    <img src="picture/building10.heic" alt="Little 4" class="content-little-pic_ph zoomable_ph">
+                </div>    
+            </section>
+            
+            <section class="done-works_ph py-10_ph">
+                <h2 class="text-center_ph text-gold_ph">Հատակների Քարե Երեսապատում</h2>
+                <div class="image-container-stones_ph">
+                    <img src="picture/hoe1.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                    <img src="picture/hoe4.HEIC" alt="Little 2" class="content-little-pic_ph zoomable_ph">
+                    <img src="picture/hoe2.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                </div>    
+                <p class="container-text_ph">Մեր քարերը նաև իդեալական են հատակների խճանկարների և երեսապատման համար։ Մեր քարերը դեկորատիվ լուծումներ են տալիս, որոնք ապահովում են ինչպես տեսողական հաճույք, այնպես էլ երկարատև դիմադրություն։</p>
+            </section>
+           <section class="whole-pictures_ph">
+            <h2 class="text-center_ph text-gold_ph pic-text-g">Գերեզմանատներ</h2>
+            <div class="pictures-section_ph">
+                <div class="left-part_ph">
+                    <img src="picture/building8.jpg" alt="Work 1" class="left-image_ph"/>
+                </div>
+                <div class="right-part_ph">
+                    <img src="picture/stone1.jpg" alt="Little 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone2.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone6.JPG" alt="Little 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone11.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                </div>              
+            </div>
+            <p class="container-text-pic_ph">Մենք տրամադրում ենք հատուկ ընտրովի քարեր, որոնք տարբերվում են իրենց բարձր որակով և անփոփոխ գեղեցկությամբ, ապահովելով մշտական ու բնական տեսք։</p>
+            </section>
+            <section class="done-works_ph py-10_ph">
+                <h2 class="text-center_ph text-gold_ph pic-text-c">Ցայտաղբյուրներ</h2>
+                <div class="image-container-stones_ph">
+                    <img src="picture/fountain2.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                    <img src="picture/fountain1.jpg" alt="Little 2" class="content-little-pic_ph zoomable_ph">
+                    <img src="picture/fountain3.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                </div>    
+                <p class="container-text_ph">Մեր ցայտաղբյուրները պատրաստվում են բարձրորակ քարերից, որոնք ապահովում են նրանց կայունությունն ու երկարատև օգտագործումը։</p>
+            </section>
+            <section class="whole-pictures_ph">
+            <h2 class="text-center_ph text-gold_ph pic-text-dz">Ձևավորման Քարեր</h2>
+            <section class="pictures-section_ph">
+                <div class="left-part_ph">
+                    <img src="picture/building5.jpg" alt="Work 1" class="left-image_ph"/>
+                </div>
+                <div class="right-part_ph">
+                    <img src="picture/stone12.heic" alt="Little 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone8.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone3.jpg" alt="Little 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone4.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                </div>              
+            </section>
+            <p class="container-text-pic_ph">Մենք տրամադրում ենք բարձրորակ ձևավորման քարեր, որոնք օգտագործվում են շենքերի արտաքին տեսքը բարելավելու և նրանց գեղեցկությունը ընդգծելու համար։</p>
+            </section>
+            <section class="final-thoughts_ph py-10_ph">
+                <h2 class="text-center_ph text-gold_ph">Նվազեցված Արժեքներ</h2>
+                <p class="text-center_ph">Մենք երաշխավորում ենք որակ և առաջարկում ենք լավագույն գներ:</p>
+            </section>
+        </div>
+            <div class="contact-section_ph">
+                <div class="logo-section_ph">
+                    <!-- Make sure the image path is correct -->
+                    <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+                    <h3>ՆՈՎԵԼ ՊԼՅՈՒՍ ՍՊԸ</h3>
+                </div>
+                <div class="contact-info_ph">
+                    <h2>Հետադարձ Կապ</h2>
+                    <ul>
+                        <li><strong>Հեռախոս</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                        <li><strong>Էլ-փոստ</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                        <li><strong>Հասցե</strong>: Սիլիկյան թաղամաս 7 փող. 1/14</li> <!-- Address -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+            <nav class="bottom-nav_ph">
+                <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+                <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+                <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+                <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+                <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+            </nav>
+        
+    </div>
+    <script src="hy_aboutus.js"></script>
+</body>
+</html>

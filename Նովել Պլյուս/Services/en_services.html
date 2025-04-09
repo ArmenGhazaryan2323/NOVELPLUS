@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>NOVEL PLUS - Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="en_services.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="comp">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <!-- Company Logo and Name -->
+            <a href="#home" class="logo-link">
+                <div class="logo-text">
+                    <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Company Logo">
+                    <span id="logo-text">NOVEL PLUS</span>
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-home"></i>
+                <span class="sidebar__navText">Home</span>
+            </a>
+            <a href="#stone" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-gem"></i>
+                <span class="sidebar__navText">Stones</span>
+            </a>
+            <a href="#services" class="sidebar__navItem services-item">
+                <i class="sidebar__navIcon fas fa-truck"></i>
+                <span class="sidebar__navText">Services</span>
+            </a>
+            <a href="#concrete" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-city"></i>
+                <span class="sidebar__navText">Concrete</span>
+            </a>
+            <a href="#about" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-info-circle"></i>
+                <span class="sidebar__navText">About us</span>
+            </a>
+            <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                <i class="sidebar__navIcon fas fa-search"></i>
+                <span class="sidebar__navText">Search</span>
+            </a>
+
+            <!-- Search Box (Hidden Initially) -->
+            <div id="searchBoxContainer" class="search-box-container">
+                <input type="text" id="search" placeholder="Search..." oninput="showSuggestions()">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        
+        
+        </div>
+
+
+        <!-- Language Selector -->
+        <div class="language-item" id="language-item">
+            <i class="sidebar__navIcon fas fa-globe"></i>
+            <span class="sidebar__navText">Language</span>
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <a href="#" data-lang="hy">Հայերեն</a>
+            <a href="#" data-lang="ru">Русский</a>
+            <a class="en" href="#" data-lang="en">English</a>
+        </div>
+    </div>
+
+
+
+    <div class="content-container">
+      <div class="buttons-container">
+          <button class="scroll-button" id="truck-button">Truck</button>
+          <button class="scroll-button" id="concrete-button">Concrete Truck</button>
+      </div>
+      <div class="container">
+          <section class="truck-section">
+              <h2 class="main-section-title">Truck</h2>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/faw-ca.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">FAW CA3250</h2>
+                      <p class="section-text">A high-powered vehicle designed for heavy loads, offering excellent stability and endurance in all road conditions.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/foton-bj1.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">FOTON-Bj1</h2>
+                      <p class="section-text">An efficient vehicle used for cargo transport, providing high mobility and stability under various conditions.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/shacmanx3000.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">Shacman X3000</h2>
+                      <p class="section-text">A high-tech, reliable truck designed for large loads and long-distance travel.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/howosinutruck.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">HOWO SinoTruck</h2>
+                      <p class="section-text">Ideal for transporting heavy loads and handling tough jobs, guaranteeing excellent reliability and long-term service.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/daf.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">DAF XF510 FTS</h2>
+                      <p class="section-text">Used for transporting heavy loads, providing excellent comfort, stability, and high energy efficiency on any road.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/iveco-fat.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">IVECO FIAT</h2>
+                      <p class="section-text">An ideal vehicle used for freight passenger transport, providing high mobility and reliability in any environment.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/kraz-250.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">KrAZ-250</h2>
+                      <p class="section-text">A powerful and reliable truck offering high payload capacity and excellent performance in difficult conditions.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/zil-mmz.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">ZiL MMZ-554</h2>
+                      <p class="section-text">A strong and stable truck that is especially suitable for construction and other heavy-duty jobs, offering reliability and high performance.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/ford-td.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">FORD Transit 2.4 TD</h2>
+                      <p class="section-text">A reliable and efficient commercial vehicle that provides high payload capacity and mobility.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/cat-02.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">CAT 428-07</h2>
+                      <p class="section-text">A durable machine that improves construction tasks by ensuring speed and efficiency under any conditions.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/hyundai.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">HYUNDAI 180W-95</h2>
+                      <p class="section-text">A versatile and powerful machine used for construction tasks, ensuring high efficiency and comfort under various conditions.</p>
+                  </div>
+              </div>
+          </section>
+          <div class="call-section">
+              <a href="tel:+37493701513">
+                  <button class="call-button">Call</button>
+              </a>
+          </div>
+          <section class="concrete-section">
+              <h2 class="main-section-title">Concrete Truck</h2>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/kamaz.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">KAMAZ 53229</h2>
+                      <p class="section-text">A powerful truck that ensures high payload capacity and stability, ideal for various tasks and cargo transport.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/shacman.heic" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">SHACMAN</h2>
+                      <p class="section-text">Ensures uniform concrete mixing and safe transport, providing reliability, efficiency, and high productivity in construction.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/faw.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">FAW</h2>
+                      <p class="section-text">A reliable and durable vehicle ensuring stable concrete mixing and efficient transport.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/sany.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">SANY</h2>
+                      <p class="section-text">A pump reaching up to 37 meters, ensuring efficient and stable concrete supply for elevated and distant areas.</p>
+                  </div>
+              </div>
+              <div class="section">
+                  <div class="image-container">
+                      <img src="picture/sitrak.jpg" alt="Image 1" class="section-image">
+                  </div>
+                  <div class="title-container">
+                      <h2 class="section-title">SITRAK</h2>
+                      <p class="section-text">A pump reaching up to 62 meters, ensuring efficient concrete supply for high and distant locations with reliable performance.</p>
+                  </div>
+              </div>
+          </section>
+          <div class="call-section">
+              <a href="tel:+37493701513">
+                  <button class="call-button">Call</button>
+              </a>
+          </div>
+      </div>    
+  </div>
+  
+
+
+  <div class="contact-section">
+    <div class="logo-section">
+        <!-- Make sure the image path is correct -->
+        <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+        <h3>NOVEL PLUS LLC</h3>
+    </div>
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <ul>
+            <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+            <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+            <li><strong>Address</strong>: Silikian district, 7th street, 1/14</li> <!-- Address -->
+        </ul>
+        
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="phone">
+  <header class="header_ph">
+      <div class="logo-container_ph">
+          <!-- Wrap the logo and company name with an anchor tag -->
+          <a href="#" class="logo-link_ph">
+              <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+              <span class="company-name_ph">NOVEL PLUS</span>
+          </a>
+      </div>
+      <div class="search-container_ph">
+          <input type="text" id="search_ph" placeholder="Search..." class="search-bar_ph" />
+          <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+      </div>
+                   
+      
+      <div class="language-item_ph nav-button_ph" id="language-item_ph">
+          <i class="sidebar__navIcon_ph fas fa-globe"></i>
+      </div>
+  </header>
+
+  <div class="language-dropdown_ph" id="language-dropdown_ph">
+      <a href="#" data-lang="hy">Հայերեն</a>
+      <a href="#" data-lang="ru">Русский</a>
+      <a class="en_ph" href="#" data-lang="en">English</a>
+  </div>
+
+
+
+  <main class="main-content_ph">
+<div class="content-container_ph">
+  <div class="buttons-container_ph">
+      <button class="scroll-button_ph" id="truck-button_ph">Truck</button>
+      <button class="scroll-button_ph" id="concrete-button_ph">Concrete Truck</button>
+  </div>
+  <div class="container_ph">
+      <section class="truck-section_ph">
+          <h2 class="main-section-title_ph">Truck</h2>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/faw-ca.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">FAW CA3250</h2>
+                  <p class="section-text_ph">A high-powered vehicle designed for heavy loads, offering excellent stability and endurance in all road conditions.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/foton-bj1.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">FOTON-Bj1</h2>
+                  <p class="section-text_ph">An efficient vehicle used for cargo transport, providing high mobility and stability under various conditions.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/shacmanx3000.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">Shacman X3000</h2>
+                  <p class="section-text_ph">A high-tech, reliable truck designed for large loads and long-distance travel.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/howosinutruck.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">HOWO SinoTruck</h2>
+                  <p class="section-text_ph">Ideal for transporting heavy loads and handling tough jobs, guaranteeing excellent reliability and long-term service.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/daf.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">DAF XF510 FTS</h2>
+                  <p class="section-text_ph">Used for transporting heavy loads, providing excellent comfort, stability, and high energy efficiency on any road.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/iveco-fat.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">IVECO FIAT</h2>
+                  <p class="section-text_ph">An ideal vehicle used for freight passenger transport, providing high mobility and reliability in any environment.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/kraz-250.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">KrAZ-250</h2>
+                  <p class="section-text_ph">A powerful and reliable truck offering high payload capacity and excellent performance in difficult conditions.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/zil-mmz.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">ZiL MMZ-554</h2>
+                  <p class="section-text_ph">A strong and stable truck that is especially suitable for construction and other heavy-duty jobs, offering reliability and high performance.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/ford-td.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">FORD Transit 2.4 TD</h2>
+                  <p class="section-text_ph">A reliable and efficient commercial vehicle that provides high payload capacity and mobility.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/cat-02.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">CAT 428-07</h2>
+                  <p class="section-text_ph">A durable machine that improves construction tasks by ensuring speed and efficiency under any conditions.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/hyundai.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">HYUNDAI 180W-95</h2>
+                  <p class="section-text_ph">A versatile and powerful machine used for construction tasks, ensuring high efficiency and comfort under various conditions.</p>
+              </div>
+          </div>
+      </section>
+      <div class="call-section_ph">
+          <a href="tel:+37493701513">
+              <button class="call-button_ph">Call</button>
+          </a>
+      </div>
+      <section class="concrete-section_ph">
+          <h2 class="main-section-title_ph">Concrete Truck</h2>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/kamaz.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">KAMAZ 53229</h2>
+                  <p class="section-text_ph">A powerful truck that ensures high payload capacity and stability, ideal for various tasks and cargo transport.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/shacman.heic" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">SHACMAN</h2>
+                  <p class="section-text_ph">Ensures uniform concrete mixing and safe transport, providing reliability, efficiency, and high productivity in construction.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/faw.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">FAW</h2>
+                  <p class="section-text_ph">A reliable and durable vehicle ensuring stable concrete mixing and efficient transport.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/sany.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">SANY</h2>
+                  <p class="section-text_ph">A pump reaching up to 37 meters, ensuring efficient and stable concrete supply for elevated and distant areas.</p>
+              </div>
+          </div>
+          <div class="section_ph">
+              <div class="image-container_ph">
+                  <img src="picture/sitrak.jpg" alt="Image 1" class="section-image_ph">
+              </div>
+              <div class="title-container_ph">
+                  <h2 class="section-title_ph">SITRAK</h2>
+                  <p class="section-text_ph">A pump reaching up to 62 meters, ensuring efficient concrete supply for high and distant locations with reliable performance.</p>
+              </div>
+          </div>
+      </section>
+      <div class="call-section_ph">
+          <a href="tel:+37493701513">
+              <button class="call-button_ph">Call</button>
+          </a>
+      </div>
+  </div>    
+</div>
+
+            
+                
+
+            <div class="contact-section_ph">
+              <div class="logo-section_ph">
+                  <!-- Make sure the image path is correct -->
+                  <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+                  <h3>NOVEL PLUS LLC</h3>
+              </div>
+              <div class="contact-info_ph">
+                  <h2>Contact Us</h2>
+                  <ul>
+                      <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                      <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                      <li><strong>Address</strong>: Silikian District, 7th Street, 1/14</li> <!-- Address -->
+                  </ul>
+              </div>
+          </div>
+      </main>
+        
+            <nav class="bottom-nav_ph">
+                <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+                <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+                <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+                <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+                <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+            </nav>
+        
+    </div>
+
+    <script src="en_services.js"></script>
+</body>
+</html>

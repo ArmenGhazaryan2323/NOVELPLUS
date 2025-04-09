@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>ՆՈՎԵԼ ՊԼՅՈՒՍ - Բետոն</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="hy_concrete.css">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <div class="comp">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <!-- Company Logo and Name -->
+            <a href="#home" class="logo-link">
+                <div class="logo-text">
+                    <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Company Logo">
+                    <span id="logo-text">ՆՈՎԵԼ ՊԼՅՈՒՍ</span>
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-home"></i>
+                <span class="sidebar__navText">Գլխավոր</span>
+            </a>
+            <a href="#stone" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-gem"></i>
+                <span class="sidebar__navText">Քարեր</span>
+            </a>
+            <a href="#services" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-truck"></i>
+                <span class="sidebar__navText">Ծառայություններ</span>
+            </a>
+            <a href="#concrete" class="sidebar__navItem concrete-item">
+                <i class="sidebar__navIcon fas fa-city"></i>
+                <span class="sidebar__navText">Բետոն</span>
+            </a>
+            <a href="#about" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-info-circle"></i>
+                <span class="sidebar__navText">Մեր մասին</span>
+            </a>
+            <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                <i class="sidebar__navIcon fas fa-search"></i>
+                <span class="sidebar__navText">Որոնել</span>
+            </a>
+
+            <!-- Search Box (Hidden Initially) -->
+            <div id="searchBoxContainer" class="search-box-container">
+                <input type="text" id="search" placeholder="Որոնել..." oninput="showSuggestions()">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        
+        
+        </div>
+
+
+        <!-- Language Selector -->
+        <div class="language-item" id="language-item">
+            <i class="sidebar__navIcon fas fa-globe"></i>
+            <span class="sidebar__navText">Լեզու</span>
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <a class="hy" href="#" data-lang="hy">Հայերեն</a>
+            <a href="#" data-lang="ru">Русский</a>
+            <a href="#" data-lang="en">English</a>
+        </div>
+    </div>
+
+
+
+    <div class="content-container">
+
+        <!-- First Section: Title on the Right, Image Slider on the Left -->
+        <div class="title-and-image-slider">
+            <div class="image">
+                <img src="picture/header.jpg" alt="Completed Work 1" class="slide titlte-image" id="slide1">
+            </div>
+            <div class="title-section">
+                <h1>Բետոն</h1>
+                <p class="intro-description">Մեր բետոնը բարձրորակ է, ամուր և դիմացկուն՝ ստեղծված ապահովելու երկարատև ծառայություն։</p>
+            </div>
+            <button class="call-button" onclick="window.location.href='tel:+37455701513'">Զանգահարել</button>
+
+        </div>
+    
+        <div class="work-gallery">
+            <h2>Շենքեր</h2>
+            <div class="gallery">
+                <img src="picture/done2.jpg" alt="Completed Work 1">
+                <img src="picture/done3.jpg" alt="Completed Work 2">
+                <img src="picture/done4.jpg" alt="Completed Work 3">
+            </div>
+        </div>
+    
+        <!-- Second Description and Price -->
+        <div class="price-section">
+            <p class="description">Մեր բետոնը ապահովում է շենքերի ամրությունը, երկարակեցությունը և սեյսմակայունությունը՝ դարձնելով դրանք հուսալի, էներգաարդյունավետ և դիմացկուն բոլոր կլիմայական պայմաններում։</p>
+        </div>
+
+
+    <div class="work-gallery">
+        <h2>Կամուրջներ</h2>
+        <div class="gallery">
+            <img src="picture/bridge1.jpg" alt="Completed Work 1">
+            <img src="picture/bridge2.jpg" alt="Completed Work 2">
+            <img src="picture/bridge3.jpg" alt="Completed Work 3">
+        </div>
+    </div>
+
+    <!-- Second Description and Price -->
+    <div class="price-section">
+        <p class="description">Մենք ապահովում ենք կամուրջների բարձր ամրություն, դիմադրողականություն և երկարակեցություն՝ երաշխավորելով անվտանգություն և կայունություն ցանկացած եղանակային պայմաններում։</p>
+    </div>
+
+
+    <div class="truck-sec">
+        <img src="picture/pumpcar.png" alt="pic" class="truck-pic">
+        <div class="truck-info">
+            <p class="truck-text">Մենք առաջարկում ենք նաև բետոնի պոմպավորման և տեղափոխման մասնագիտական ծառայություններ։</p>
+            <button class="truck-btn" onclick="window.location.href='concrete-services.html'">Տեսնել ավելին</button>
+        </div>
+    </div>
+    </div>    
+
+
+    <div class="contact-section">
+        <div class="logo-section">
+            <!-- Make sure the image path is correct -->
+            <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+            <h3>ՆՈՎԵԼ ՊԼՅՈՒՍ ՍՊԸ</h3>
+        </div>
+        <div class="contact-info">
+            <h2>Հետադարձ Կապ</h2>
+            <ul>
+                <li><strong>Հեռախոս</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                <li><strong>Էլ-փոստ</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                <li><strong>Հասցե</strong>: Սիլիկյան թաղամաս 7 փող. 1/14</li> <!-- Address -->
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="phone">
+            <header class="header_ph">
+                <div class="logo-container_ph">
+                    <!-- Wrap the logo and company name with an anchor tag -->
+                    <a href="#" class="logo-link_ph">
+                        <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+                        <span class="company-name_ph">ՆՈՎԵԼ ՊԼՅՈՒՍ</span>
+                    </a>
+                </div>
+                <div class="search-container_ph">
+                    <input type="text" id="search_ph" placeholder="Որոնել..." class="search-bar_ph" />
+                    <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+                </div>
+                             
+                
+                <div class="language-item_ph nav-button_ph" id="language-item_ph">
+                    <i class="sidebar__navIcon_ph fas fa-globe"></i>
+                </div>
+            </header>
+        
+            <div class="language-dropdown_ph" id="language-dropdown_ph">
+                <a class="hy_ph" href="#" data-lang="hy">Հայերեն</a>
+                <a href="#" data-lang="ru">Русский</a>
+                <a href="#" data-lang="en">English</a>
+            </div>
+        
+
+
+            <main class="main-content_ph">
+                <!--Tuff content-->
+
+                <div class="content-container_ph">
+                     <div class="intro">
+                    <div class="title-section_ph">
+                        <h1>Բետոն</h1>
+                        <button class="call-button_ph" onclick="window.location.href='tel:+37455701513'">Զանգահարել</button>
+                    </div>
+                        <div class="image_ph">
+                            <img src="picture/header.jpg" alt="Completed Work 1" class="slide_ph">
+                        </div>
+                        <p class="intro-description_ph">Մեր բետոնը բարձրորակ է, ամուր և դիմացկուն՝ ստեղծված ապահովելու երկարատև ծառայություն։</p>
+                    </div>
+
+                
+                    <!-- Pictures of Completed Works -->
+                    <div class="work-gallery_ph">
+                        <h2>Շենքեր</h2>
+                        <div class="gallery_ph">
+                            <img src="picture/done2.jpg" alt="Completed Work 1">
+                            <img src="picture/done3.jpg" alt="Completed Work 2">
+                            <img src="picture/done4.jpg" alt="Completed Work 3">
+                        </div>
+                    </div>
+                
+                    <!-- Second Description and Price -->
+                    <div class="price-section_ph">
+                        <p class="description_ph">Մեր բետոնը ապահովում է շենքերի ամրությունը, երկարակեցությունը և սեյսմակայունությունը՝ դարձնելով դրանք հուսալի, էներգաարդյունավետ և դիմացկուն բոլոր կլիմայական պայմաններում։</p>
+                    </div>
+                    <div class="work-gallery_ph">
+                        <h2>Կամուրջներ</h2>
+                        <div class="gallery_ph">
+                            <img src="picture/bridge1.jpg" alt="Completed Work 1">
+                            <img src="picture/bridge2.jpg" alt="Completed Work 2">
+                            <img src="picture/bridge3.jpg" alt="Completed Work 3">
+                        </div>
+                    </div>
+                
+                    <!-- Second Description and Price -->
+                    <div class="price-section_ph">
+                        <p class="description_ph">Մենք ապահովում ենք կամուրջների բարձր ամրություն, դիմադրողականություն և երկարակեցություն՝ երաշխավորելով անվտանգություն և կայունություն ցանկացած եղանակային պայմաններում։</p>
+                    </div>
+                </div>
+                <div class="truck-sec_ph">
+                    <img src="picture/pumpcar.png" alt="pic" class="truck-pic_ph">
+                    <div class="truck-info_ph">
+                        <p class="truck-text_ph">Մենք առաջարկում ենք նաև բետոնի պոմպավորման և տեղափոխման մասնագիտական ծառայություններ։</p>
+                        <button class="truck-btn_ph" onclick="window.location.href='concrete-services.html'">Տեսնել ավելին</button>
+                    </div>
+                </div>
+            </section>
+                
+
+                <div class="contact-section_ph">
+                    <div class="logo-section_ph">
+                        <!-- Make sure the image path is correct -->
+                        <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+                        <h3>ՆՈՎԵԼ ՊԼՅՈՒՍ ՍՊԸ</h3>
+                    </div>
+                    <div class="contact-info_ph">
+                        <h2>Հետադարձ Կապ</h2>
+                        <ul>
+                            <li><strong>Հեռախոս</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                            <li><strong>Էլ-փոստ</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                            <li><strong>Հասցե</strong>: Սիլիկյան թաղամաս 7 փող. 1/14</li> <!-- Address -->
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        
+            <nav class="bottom-nav_ph">
+                <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+                <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+                <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+                <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+                <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+            </nav>
+        
+    </div>
+
+    <script src="hy_concrete.js"></script>
+</body>
+</html>

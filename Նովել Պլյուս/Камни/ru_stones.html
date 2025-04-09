@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>НОВЕЛ ПЛЮС - Камни</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="pictures stones/LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ru_stones.css">
+</head>
+<body>
+    <div class="comp">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <!-- Логотип компании и название -->
+            <a href="#home" class="logo-link">
+                <div class="logo-text">
+                    <img class="sidebar__logo" src="pictures stones/LOGO.jpg" alt="Логотип компании">
+                    <span id="logo-text">НОВЕЛ ПЛЮС</span>
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-home"></i>
+                <span class="sidebar__navText">Главная</span>
+            </a>
+            <a href="#stone" class="sidebar__navItem stone_item">
+                <i class="sidebar__navIcon fas fa-gem"></i>
+                <span class="sidebar__navText">Камни</span>
+            </a>
+            <a href="#services" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-truck"></i>
+                <span class="sidebar__navText">Услуги</span>
+            </a>
+            <a href="#concrete" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-city"></i>
+                <span class="sidebar__navText">Бетон</span>
+            </a>
+            <a href="#about" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-info-circle"></i>
+                <span class="sidebar__navText">О нас</span>
+            </a>
+            <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                <i class="sidebar__navIcon fas fa-search"></i>
+                <span class="sidebar__navText">Поиск</span>
+            </a>
+
+            <!-- Поисковая строка (скрыта по умолчанию) -->
+            <div id="searchBoxContainer" class="search-box-container">
+                <input type="text" id="search" placeholder="Поиск..." oninput="showSuggestions()">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        </div>
+
+        <!-- Выбор языка -->
+        <div class="language-item" id="language-item">
+            <i class="sidebar__navIcon fas fa-globe"></i>
+            <span class="sidebar__navText">Язык</span>
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <a href="#" data-lang="hy">Հայերեն</a>
+            <a class="ru" href="#" data-lang="ru">Русский</a>
+            <a href="#" data-lang="en">English</a>
+        </div>
+    </div>
+
+    <section class="product-section travertine" id="stones">
+        <div class="product-line">
+            <img src="pictures stones/travertine.jpg" alt="Камни" />
+            <div class="content-container ">
+                <h2 class="title-stones">Травертин</h2>
+                <p class="text-stones">Обладает красивым естественным белым оттенком, который идеально сочетается с различными стилями. Его высокая прочность и необыкновенная красота позволяют создавать уникальные декоративные элементы.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-section tuff" id="stones">
+        <div class="product-line">
+            <img src="pictures stones/tuff.JPG" alt="Камни" />
+            <div class="content-container ">
+                <h2 class="title-stones">Черный туф</h2>
+                <p class="text-stones">Впечатляет своим характерным темным оттенком, предлагая разнообразные и однородные дизайны. Идеален для использования в местах, где требуется долговечность и уникальный внешний вид.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-section basalt" id="concrete">
+        <div class="product-line">
+            <img src="pictures stones/basalt.JPG" alt="Бетон"/>
+            <div class="content-container ">
+                <h2 class="title-concrete">Базалт</h2>
+                <p class="text-concrete">Отличный выбор для различных строительных проектов. Он представлен в красивых и разнообразных оттенках, идеально сочетающихся с разными дизайнами для создания элегантных и всегда стильных декоративных элементов.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-section">
+        <div class="logo-section">
+            <!-- Убедитесь, что путь к изображению правильный -->
+            <img src="pictures stones/LIONLOGO.jpg" alt="Логотип компании" />
+            <h3>НОВЕЛ ПЛЮС ООО</h3>
+        </div>
+        <div class="contact-info">
+            <h2>Контакты</h2>
+            <ul>
+                <li><strong>Телефон</strong>: +37493701513, +37491701513</li> <!-- Два номера телефона -->
+                <li><strong>Электронная почта</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Электронная почта -->
+                <li><strong>Адрес</strong>: район Силикиан, 7-я улица, 1/14</li> <!-- Адрес -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="phone">
+    <header class="header_ph">
+        <div class="logo-container_ph">
+            <!-- Обернуть логотип и название компании в ссылку -->
+            <a href="#" class="logo-link_ph">
+                <img src="pictures stones/LOGO.jpg" alt="Логотип компании" class="company-logo_ph">
+                <span class="company-name_ph">НОВЕЛ ПЛЮС</span>
+            </a>
+        </div>
+        <div class="search-container_ph">
+            <input type="text" id="search_ph" placeholder="Поиск..." class="search-bar_ph" />
+            <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+        </div>
+
+        <div class="language-item_ph nav-button_ph" id="language-item_ph">
+            <i class="sidebar__navIcon_ph fas fa-globe"></i>
+        </div>
+    </header>
+
+
+    <div class="language-dropdown_ph" id="language-dropdown_ph">
+        <a href="#" data-lang="hy">Հայերեն</a>
+        <a class="ru_ph" href="#" data-lang="ru">Русский</a>
+        <a href="#" data-lang="en">English</a>
+    </div>
+
+    <main class="main-content_ph">
+        <section class="product-section_ph" id="stones_ph">
+            <div class="product-line_ph">
+                <img src="pictures stones/travertine.jpg" alt="Камни" class="section-image_ph"/>
+                <div class="content-container_ph travertine-section">
+                    <h2 class="title-stones_ph">Травертин</h2>
+                    <p class="text-stones_ph">Обладает красивым естественным белым оттенком, который идеально сочетается с различными стилями. Его высокая прочность и необыкновенная красота позволяют создавать уникальные декоративные элементы.</p>
+                </div>
+            </div>
+        </section>
+        <section class="product-section_ph" id="services_ph">
+            <div class="product-line_ph">
+                <img src="pictures stones/tuff.JPG" alt="Камни" class="section-image_ph"/>
+                <div class="content-container_ph tuff-section">
+                    <h2 class="title-stones_ph">Чёрный туф</h2>
+                    <p class="text-stones_ph">Впечатляет своим характерным темным оттенком, предлагая разнообразные и однородные дизайны. Идеален для использования в местах, где требуется долговечность и уникальный внешний вид.</p>
+                </div>
+            </div>
+        </section>
+        <section class="product-section_ph" id="concrete_ph">
+            <div class="product-line_ph">
+                <img src="pictures stones/basalt.JPG" alt="Бетон" class="section-image_ph"/>
+                <div class="content-container_ph basalt-section">
+                    <h2 class="title-concrete_ph">Базалт</h2>
+                    <p class="text-concrete_ph">Отличный выбор для различных строительных проектов. Он представлен в красивых и разнообразных оттенках, идеально сочетающихся с разными дизайнами для создания элегантных и всегда стильных декоративных элементов.</p>
+                </div>
+            </div>
+        </section>
+    
+    
+
+        <div class="contact-section_ph">
+            <div class="logo-section_ph">
+                <!-- Убедитесь, что путь к изображению указан правильно -->
+                <img src="pictures stones/LIONLOGO.jpg" alt="Логотип компании" />
+                <h3>НОВЕЛ ПЛЮС ООО</h3>
+            </div>
+        
+            <div class="contact-info_ph">
+                <h2>Свяжитесь с нами</h2>
+                <ul>
+                    <li><strong>Телефон</strong>: +37493701513, +37491701513</li> <!-- Два номера телефона -->
+                    <li><strong>Электронная почта</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Почта -->
+                    <li><strong>Адрес</strong>: Силикянский район, 7-я улица, дом 1/14</li> <!-- Адрес -->
+                </ul>
+            </div>
+        </div>
+        </main>
+        
+    <nav class="bottom-nav_ph">
+        <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+        <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+        <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+        <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+        <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+    </nav>
+
+</div>
+
+    <script src="ru_stones.js"></script>
+</body>
+</html>

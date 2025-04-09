@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>NOVEL PLUS - Basalt</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="en_basalt.css">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <div class="comp">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <!-- Company Logo and Name -->
+            <a href="#home" class="logo-link">
+                <div class="logo-text">
+                    <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Company Logo">
+                    <span id="logo-text">NOVEL PLUS</span>
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-home"></i>
+                <span class="sidebar__navText">Home</span>
+            </a>
+            <a href="#stone" class="sidebar__navItem stone-item">
+                <i class="sidebar__navIcon fas fa-gem"></i>
+                <span class="sidebar__navText">Stones</span>
+            </a>
+            <a href="#services" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-truck"></i>
+                <span class="sidebar__navText">Services</span>
+            </a>
+            <a href="#concrete" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-city"></i>
+                <span class="sidebar__navText">Concrete</span>
+            </a>
+            <a href="#about" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-info-circle"></i>
+                <span class="sidebar__navText">About Us</span>
+            </a>
+            <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                <i class="sidebar__navIcon fas fa-search"></i>
+                <span class="sidebar__navText">Search</span>
+            </a>
+
+            <!-- Search Box (Hidden Initially) -->
+            <div id="searchBoxContainer" class="search-box-container">
+                <input type="text" id="search" placeholder="Search..." oninput="showSuggestions()">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        
+        
+        </div>
+
+
+        <!-- Language Selector -->
+        <div class="language-item" id="language-item">
+            <i class="sidebar__navIcon fas fa-globe"></i>
+            <span class="sidebar__navText">Language</span>
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <a href="#" data-lang="hy">Հայերեն</a>
+            <a href="#" data-lang="ru">Русский</a>
+            <a class="en" href="#" data-lang="en">English</a>
+        </div>
+    </div>
+
+
+
+    <div class="content-container">
+
+        <!-- First Section: Title on the Right, Image Slider on the Left -->
+        <div class="title-and-image-slider">
+            <div class="image">
+                <img src="picture/header.jpg" alt="Completed Work 1" class="slide" id="slide1">
+            </div>
+            <div class="title-section">
+                <h1>Basalt</h1>
+                <p class="intro-description"> Basalt is characterized not only by its long-lasting usability but also by its impressive aesthetics, making it perfect for cladding.</p>
+                <button class="call-button" onclick="window.location.href='tel:+37444701513'">Call</button>
+            </div>
+
+        </div>
+    
+        <!-- Pictures of Completed Works -->
+        <div class="work-gallery">
+            <h2>Stones</h2>
+            <div class="gallery">
+                <img src="picture/stone3.jpg" alt="Completed Work 1">
+                <img src="picture/stone1.JPG" alt="Completed Work 2" class="opacitypic">
+                <img src="picture/stone2.jpg" alt="Completed Work 3">
+            </div>
+        </div>
+    
+        <!-- Second Description and Price -->
+        <div class="price-section">
+            <p class="description">The stone, with its dark color and natural appearance, creates a strong and unique look, making every building special.</p>
+        </div>
+        <div class="work-gallery">
+            <h2>Completed Works</h2>
+            <div class="gallery opacity">
+                <img src="picture/done1.jpg" alt="Completed Work 1">
+                <img src="picture/done2.jpg" alt="Completed Work 2" class="opacitypic">
+                <img src="picture/done6.heic" alt="Completed Work 3" class="opacitypic">
+            </div>
+        </div>
+    
+        <!-- Second Description and Price -->
+        <div class="price-section">
+            <p class="description">It is often used in both construction and decorative projects due to its unique color shades and beautiful appearance.</p>
+            <h3 class="ending-text">Basalt will give strength and appeal to your project. It is an excellent choice for those looking for strong and beautiful solutions.</h3>
+            <a href="tel:+37444701513">
+                <p class="price">Call for Details</p>
+              </a>
+              
+        </div>
+    </div>
+    
+
+    <div class="contact-section">
+        <div class="logo-section">
+            <!-- Make sure the image path is correct -->
+            <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+            <h3>NOVEL PLUS LLC</h3>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                <li><strong>Address</strong>: Silikian District, 7th Street, 1/14</li> <!-- Address -->
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="phone">
+    <header class="header_ph">
+        <div class="logo-container_ph">
+            <!-- Wrap the logo and company name with an anchor tag -->
+            <a href="#" class="logo-link_ph">
+                <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+                <span class="company-name_ph">NOVEL PLUS</span>
+            </a>
+        </div>
+        <div class="search-container_ph">
+            <input type="text" id="search_ph" placeholder="Search..." class="search-bar_ph" />
+            <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+        </div>
+        
+        <div class="language-item_ph nav-button_ph" id="language-item_ph">
+            <i class="sidebar__navIcon_ph fas fa-globe"></i>
+        </div>
+    </header>
+
+    <div class="language-dropdown_ph" id="language-dropdown_ph">
+        <a href="#" data-lang="hy">Հայերեն</a>
+        <a href="#" data-lang="ru">Русский</a>
+        <a class="en_ph" href="#" data-lang="en">English</a>
+    </div>
+
+    <main class="main-content_ph">
+        <!--Tuff content-->
+
+        <div class="content-container_ph">
+
+            <!-- First Section: Title on the Right, Image Slider on the Left -->
+            <div class="title-and-image-slider_ph">
+                <div class="image_ph">
+                    <img src="picture/header.jpg" alt="Completed Work 1" class="slide_ph">
+                </div>
+                <div class="title-section_ph">
+                    <h1>Basalt</h1>
+                    <p class="intro-description_ph">Basalt is characterized not only by its long-lasting usability but also by its impressive aesthetics, making it perfect for cladding.</p>
+                </div>
+                <button class="call-button_ph" onclick="window.location.href='tel:+37444701513'">Call</button>
+
+            </div>
+        
+            <!-- Pictures of Completed Works -->
+            <div class="work-gallery_ph">
+                <h2>Stones</h2>
+                <div class="gallery_ph">
+                    <img src="picture/stone3.JPG" alt="Completed Work 1">
+                    <img src="picture/stone1.jpg" alt="Completed Work 2" class="opacitypic">
+                    <img src="picture/stone2.jpg" alt="Completed Work 3">
+                </div>
+            </div>
+        
+            <!-- Second Description and Price -->
+            <div class="price-section_ph">
+                <p class="description_ph">The stone, with its dark color and natural appearance, creates a strong and unique look, making every building special.</p>
+            </div>
+            <div class="work-gallery_ph">
+                <h2>Completed Works</h2>
+                <div class="gallery_ph">
+                    <img src="picture/done1.jpg" alt="Completed Work 1">
+                    <img src="picture/done2.jpg" alt="Completed Work 2" class="opacitypic">
+                    <img src="picture/done6.heic" alt="Completed Work 3" class="opacitypic">
+                </div>
+            </div>
+        
+            <!-- Second Description and Price -->
+            <div class="price-section_ph">
+                <p class="description_ph">It is often used in both construction and decorative projects due to its unique color shades and beautiful appearance.</p>
+                <h3 class="ending-text_ph">Basalt will give strength and appeal to your project. It is an excellent choice for those looking for strong and beautiful solutions.</h3>
+                <a href="tel:+37444701513">
+                    <p class="price_ph">Call for Details</p>
+                </a>                    
+            </div>
+        </div>
+
+        <div class="contact-section_ph">
+            <div class="logo-section_ph">
+                <!-- Make sure the image path is correct -->
+                <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+                <h3>NOVEL PLUS LLC</h3>
+            </div>
+            <div class="contact-info_ph">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                    <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                    <li><strong>Address</strong>: Silikian District, 7th Street, 1/14</li> <!-- Address -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav_ph">
+        <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+        <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+        <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+        <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+        <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+    </nav>
+
+</div>
+
+    <script src="en_basalt.js"></script>
+</body>
+</html>

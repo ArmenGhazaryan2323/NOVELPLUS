@@ -1,0 +1,19 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "home page",
+  "main": "hy_novelplus.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node hy_novelplus.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "l"
+  },
+  "author": "AaA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

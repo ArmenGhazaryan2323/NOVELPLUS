@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>НОВЕЛ ПЛЮС - О нас</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ru_aboutus.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="comp">
+        <!-- Боковая панель -->
+        <div class="sidebar">
+            <div class="sidebar__header">
+                <!-- Логотип компании и название -->
+                <a href="" class="logo-link">
+                    <div class="logo-text">
+                        <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Логотип компании">
+                        <span id="logo-text">НОВЕЛ ПЛЮС</span>
+                    </div>
+                </a>
+            </div>
+    
+            
+            <div class="sidebar__nav">
+                <a href="#home" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-home"></i>
+                    <span class="sidebar__navText">Главная</span>
+                </a>
+                <a href="#stone" class="sidebar__navItem ">
+                    <i class="sidebar__navIcon fas fa-gem"></i>
+                    <span class="sidebar__navText">Камни</span>
+                </a>
+                <a href="#services" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-truck"></i>
+                    <span class="sidebar__navText">Услуги</span>
+                </a>
+                <a href="#concrete" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-city"></i>
+                    <span class="sidebar__navText">Бетон</span>
+                </a>
+                <a href="#about" class="sidebar__navItem aboutus-item">
+                    <i class="sidebar__navIcon fas fa-info-circle"></i>
+                    <span class="sidebar__navText">О нас</span>
+                </a>
+                <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                    <i class="sidebar__navIcon fas fa-search"></i>
+                    <span class="sidebar__navText">Поиск</span>
+                </a>
+    
+                <!-- Поисковая строка (скрыта изначально) -->
+                <div id="searchBoxContainer" class="search-box-container">
+                    <input type="text" id="search" placeholder="Поиск..." oninput="showSuggestions()">
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                </div>
+            
+            
+            </div>
+    
+    
+    
+            <!-- Language Selector -->
+            <div class="language-item" id="language-item">
+                <i class="sidebar__navIcon fas fa-globe"></i>
+                <span class="sidebar__navText">Язык</span>
+            </div>
+            <div class="language-dropdown" id="language-dropdown">
+                <a href="#" data-lang="hy">Հայերեն</a>
+                <a class="ru" href="#" data-lang="ru">Русский</a>
+                <a href="#" data-lang="en">English</a>
+            </div>
+        </div>
+
+    <div class="content">
+    <div class="main-header">
+        <h1 class="content-title">Наша компания</h1>
+        <p>предлагает высококачественные камни, бетон, специализированные услуги и уникальные проекты, основанные на нашем опыте и работе.</p>
+    </div>
+    <section class="done-works py-10">
+        <h2 class="text-center text-gold">Завершенные работы</h2>
+        <div class="gallery">
+            <div class="work-item">
+                <img src="picture/building9.jpg" alt="Работа 1"/>
+            </div>
+            <div class="work-item">
+                <p class="content-text">Наша компания достигла больших успехов, выполняя качественные проекты в строительстве зданий и других объектов. Мы работали над созданием прочных и долговечных решений. Каждый проект был выполнен с особым вниманием к деталям и специальным требованиям клиентов.</p>
+            </div>
+            <div class="work-item">
+                <p class="content-text">Наиболее широко используемые технологии и наши подходы обеспечивают не только высокую прочность конструкций, но и их долговечность. Мы предоставляем высококачественные камни для строительства, обеспечивая красивое и долговечное строение.</p>
+            </div>
+            <div class="work-item">
+                <img src="picture/building2.jpg" alt="Работа 2"/>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="picture/building1.jpg" alt="Маленькая 1" class="content-little-pic scroll-effect">
+            <img src="picture/building4.heic" alt="Маленькая 2" class="content-little-pic scroll-effect">
+            <img src="picture/building7.heic" alt="Маленькая 3" class="content-little-pic scroll-effect">
+            <img src="picture/building10.heic" alt="Маленькая 4" class="content-little-pic scroll-effect">
+        </div>    
+    </section>
+    <section class="done-works py-10">
+        <h2 class="text-center text-gold">Каменная отделка пола</h2>
+        <div class="image-container-stones">
+            <img src="picture/hoe1.jpg" alt="Маленькая 1" class="content-little-pic scroll-effect">
+            <img src="picture/hoe4.HEIC" alt="Маленькая 2" class="content-little-pic scroll-effect">
+            <img src="picture/hoe2.jpg" alt="Маленькая 1" class="content-little-pic scroll-effect">
+        </div>    
+        <p class="container-text">Наши камни идеально подходят для настенных и напольных мозаик и облицовки. Наши камни предлагают декоративные решения, которые дарят не только визуальное удовольствие, но и долговечную стойкость.</p>
+    </section>
+    <h2 class="text-center text-gold">Кладбища</h2>
+    <section class="pictures-section">
+        <div class="left-part">
+            <img src="picture/building8.jpg" alt="Работа 1" class="left-image"/>
+        </div>
+        <div class="right-part">
+            <img src="picture/stone1.jpg" alt="Маленькая 1" class="right-pic scroll-effect">
+            <img src="picture/stone2.jpg" alt="Маленькая 2" class="right-pic scroll-effect">
+            <img src="picture/stone6.JPG" alt="Маленькая 1" class="right-pic scroll-effect">
+            <img src="picture/stone11.jpg" alt="Маленькая 2" class="right-pic scroll-effect">
+        </div>              
+    </section>
+    <p class="container-text-pic">Мы предоставляем специально отобранные камни, которые выделяются своим высоким качеством и вечной красотой, обеспечивая долговечный и природный вид.</p>
+
+    <section class="done-works py-10">
+        <h2 class="text-center text-gold">Фонтаны</h2>
+        <div class="image-container-stones">
+            <img src="picture/fountain2.jpg" alt="Маленькая 1" class="content-little-pic scroll-effect">
+            <img src="picture/fountain1.jpg" alt="Маленькая 2" class="content-little-pic scroll-effect">
+            <img src="picture/fountain3.jpg" alt="Маленькая 1" class="content-little-pic scroll-effect">
+        </div>    
+        <p class="container-text">Наши фонтаны выполнены из высококачественных камней, которые обеспечивают их долговечность и долгосрочное использование.</p>
+    </section>
+    <h2 class="text-center text-gold">Декоративные камни</h2>
+    <section class="pictures-section">
+        <div class="left-part">
+            <img src="picture/building5.jpg" alt="Работа 1" class="left-image"/>
+        </div>
+        <div class="right-part">
+            <img src="picture/stone12.heic" alt="Маленькая 1" class="right-pic scroll-effect">
+            <img src="picture/stone8.jpg" alt="Маленькая 2" class="right-pic scroll-effect">
+            <img src="picture/stone3.jpg" alt="Маленькая 1" class="right-pic scroll-effect">
+            <img src="picture/stone4.jpg" alt="Маленькая 2" class="right-pic scroll-effect">
+        </div>              
+    </section>
+    <p class="container-text-pic">Мы предоставляем высококачественные декоративные камни, которые используются для улучшения внешнего вида зданий и подчеркивания их красоты.</p>
+
+    <section class="final-thoughts py-10">
+        <h2 class="text-center text-gold">Скидки на цены</h2>
+        <p class="text-center">Мы гарантируем качество и предлагаем лучшие цены.</p>
+    </section>
+</div>
+
+    
+<div class="contact-section">
+    <div class="logo-section">
+        <!-- Убедитесь, что путь к изображению правильный -->
+        <img src="picture/LIONLOGO.jpg" alt="Логотип компании" />
+        <h3>НОВЕЛ ПЛЮС ООО</h3>
+    </div>
+    <div class="contact-info">
+        <h2>Контакты</h2>
+        <ul>
+            <li><strong>Телефон</strong>: +37493701513, +37491701513</li> <!-- Два номера телефона -->
+            <li><strong>Электронная почта</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Электронная почта -->
+            <li><strong>Адрес</strong>: район Силикян, 7-я улица, 1/14</li> <!-- Адрес -->
+        </ul>
+    </div>
+    
+</div>
+</div>
+    
+
+
+
+
+
+
+<div class="phone">
+    <header class="header_ph">
+        <div class="logo-container_ph">
+            <!-- Wrap the logo and company name with an anchor tag -->
+            <a href="#" class="logo-link_ph">
+                <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+                <span class="company-name_ph">НОВЕЛ ПЛЮС</span>
+            </a>
+        </div>
+        <div class="search-container_ph">
+            <input type="text" id="search_ph" placeholder="Поиск..." class="search-bar_ph" />
+            <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+        </div>
+                     
+        
+        <div class="language-item_ph nav-button_ph" id="language-item_ph">
+            <i class="sidebar__navIcon_ph fas fa-globe"></i>
+        </div>
+    </header>
+
+    <div class="language-dropdown_ph" id="language-dropdown_ph">
+        <a href="#" data-lang="hy">Հայերեն</a>
+        <a class="ru_ph" href="#" data-lang="ru">Русский</a>
+        <a href="#" data-lang="en">English</a>
+    </div>
+    <div class="content_ph">
+        <div class="main-header_ph">
+            <h1 class="content-title_ph">Наша Компания</h1>
+            <p class="main-text_ph">предлагает высококачественные камни, бетон, специализированные услуги и уникальные проекты, основанные на нашем опыте и работе.</p>
+        </div>
+    
+        <section class="done-works_ph py-10_ph">
+            <h2 class="text-center_ph text-gold_ph">Завершенные Работы</h2>
+            <div class="gallery_ph">
+                <div class="work-item_ph">
+                    <img src="picture/building9.jpg" alt="Работа 1"/>
+                </div>
+                <div class="work-item_ph">
+                    <p class="content-text_ph">Наша компания достигла больших успехов, выполняя качественные проекты в строительстве зданий и других объектов. Мы работали над созданием прочных и долговечных решений. Каждый проект был выполнен с особым вниманием к деталям и специальным требованиям клиентов.</p>
+                </div>
+                <div class="work-item_ph">
+                    <p class="content-text_ph">Наиболее широко используемые технологии и наши подходы обеспечивают не только высокую прочность конструкций, но и их долговечность. Мы предоставляем высококачественные камни для строительства, обеспечивая красивое и долговечное строение.</p>
+                </div>
+                <div class="work-item_ph">
+                    <img src="picture/building2.jpg" alt="Работа 2"/>
+                </div>  
+            </div>
+            <div class="image-container_ph">
+                <img src="picture/building1.jpg" alt="Маленькое фото 1" class="content-little-pic_ph zoomable_ph">
+                <img src="picture/building4.heic" alt="Маленькое фото 2" class="content-little-pic_ph zoomable_ph">
+                <img src="picture/building7.heic" alt="Маленькое фото 3" class="content-little-pic_ph zoomable_ph">
+                <img src="picture/building10.heic" alt="Маленькое фото 4" class="content-little-pic_ph zoomable_ph">
+            </div>    
+        </section>
+        
+        <section class="done-works_ph py-10_ph">
+            <h2 class="text-center_ph text-gold_ph pic-text-f">Каменная отделка пола</h2>
+            <div class="image-container-stones_ph">
+                <img src="picture/hoe1.jpg" alt="Маленькое фото 1" class="content-little-pic_ph zoomable_ph">
+                <img src="picture/hoe4.HEIC" alt="Маленькое фото 2" class="content-little-pic_ph zoomable_ph">
+                <img src="picture/hoe2.jpg" alt="Маленькое фото 1" class="content-little-pic_ph zoomable_ph">
+            </div>    
+            <p class="container-text_ph">Наши камни идеально подходят для настенных и напольных мозаик и облицовки. Наши камни предлагают декоративные решения, которые дарят не только визуальное удовольствие, но и долговечную стойкость. </p>
+        </section>
+        
+        <section class="whole-pictures_ph">
+            <h2 class="text-center_ph text-gold_ph pic-text-g">Кладбища</h2>
+            <div class="pictures-section_ph">
+                <div class="left-part_ph">
+                    <img src="picture/building8.jpg" alt="Работа 1" class="left-image_ph"/>
+                </div>
+                <div class="right-part_ph">
+                    <img src="picture/stone1.jpg" alt="Маленькое фото 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone2.jpg" alt="Маленькое фото 2" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone6.JPG" alt="Маленькое фото 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone11.jpg" alt="Маленькое фото 2" class="right-pic_ph zoomable_ph">
+                </div>              
+            </div>
+            <p class="container-text-pic_ph">Мы предоставляем специально отобранные камни, которые выделяются своим высоким качеством и вечной красотой, обеспечивая долговечный и природный вид.</p>
+        </section>
+        
+        <section class="done-works_ph py-10_ph">
+            <h2 class="text-center_ph text-gold_ph pic-text-c">Фонтаны</h2>
+            <div class="image-container-stones_ph">
+                <img src="picture/fountain2.jpg" alt="Маленькое фото 1" class="content-little-pic_ph zoomable_ph">
+                <img src="picture/fountain1.jpg" alt="Маленькое фото 2" class="content-little-pic_ph zoomable_ph">
+                <img src="picture/fountain3.jpg" alt="Маленькое фото 1" class="content-little-pic_ph zoomable_ph">
+            </div>    
+            <p class="container-text_ph">Наши фонтаны выполнены из высококачественных камней, которые обеспечивают их долговечность и долгосрочное использование.</p>
+        </section>
+        
+        <section class="whole-pictures_ph">
+            <h2 class="text-center_ph text-gold_ph pic-text-dz">Декоративные Камни</h2>
+            <section class="pictures-section_ph">
+                <div class="left-part_ph">
+                    <img src="picture/building5.jpg" alt="Работа 1" class="left-image_ph"/>
+                </div>
+                <div class="right-part_ph">
+                    <img src="picture/stone12.heic" alt="Маленькое фото 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone8.jpg" alt="Маленькое фото 2" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone3.jpg" alt="Маленькое фото 1" class="right-pic_ph zoomable_ph">
+                    <img src="picture/stone4.jpg" alt="Маленькое фото 2" class="right-pic_ph zoomable_ph">
+                </div>              
+            </section>
+            <p class="container-text-pic_ph">Мы предоставляем высококачественные декоративные камни, которые используются для улучшения внешнего вида зданий и подчеркивания их красоты.</p>
+        </section>
+        
+        <section class="final-thoughts_ph py-10_ph">
+            <h2 class="text-center_ph text-gold_ph">Скидки на цены</h2>
+            <p class="text-center_ph">Мы гарантируем качество и предлагаем лучшие цены.</p>
+        </section>
+    </div>
+    
+    <div class="contact-section_ph">
+        <div class="logo-section_ph">
+            <!-- Убедитесь, что путь к изображению правильный -->
+            <img src="picture/LIONLOGO.jpg" alt="Логотип компании" />
+            <h3>НОВЕЛ ПЛЮС ООО</h3>
+        </div>
+        <div class="contact-info_ph">
+            <h2>Контакты</h2>
+            <ul>
+                <li><strong>Телефон</strong>: +37493701513, +37491701513</li> <!-- Два номера телефона -->
+                <li><strong>Электронная почта</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Электронная почта -->
+                <li><strong>Адрес</strong>: район Силикиан, 7-я улица, 1/14</li> <!-- Адрес -->
+            </ul>
+        </div>
+    </div>
+    </main>
+    
+    <nav class="bottom-nav_ph">
+        <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+        <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+        <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+        <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+        <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+    </nav>
+    
+    </div>
+    
+</div>
+    <script src="ru_aboutus.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>НОВЕЛ ПЛЮС - Услуги</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ru_services.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+        <div class="comp">
+        <!-- Боковая панель -->
+        <div class="sidebar">
+            <div class="sidebar__header">
+                <!-- Логотип компании и название -->
+                <a href="" class="logo-link">
+                    <div class="logo-text">
+                        <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Логотип компании">
+                        <span id="logo-text">НОВЕЛ ПЛЮС</span>
+                    </div>
+                </a>
+            </div>
+    
+            
+            <div class="sidebar__nav">
+                <a href="#home" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-home"></i>
+                    <span class="sidebar__navText">Главная</span>
+                </a>
+                <a href="#stone" class="sidebar__navItem ">
+                    <i class="sidebar__navIcon fas fa-gem"></i>
+                    <span class="sidebar__navText">Камни</span>
+                </a>
+                <a href="#services" class="sidebar__navItem services-item">
+                    <i class="sidebar__navIcon fas fa-truck"></i>
+                    <span class="sidebar__navText">Услуги</span>
+                </a>
+                <a href="#concrete" class="sidebar__navItem ">
+                    <i class="sidebar__navIcon fas fa-city"></i>
+                    <span class="sidebar__navText">Бетон</span>
+                </a>
+                <a href="#about" class="sidebar__navItem">
+                    <i class="sidebar__navIcon fas fa-info-circle"></i>
+                    <span class="sidebar__navText">О нас</span>
+                </a>
+                <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                    <i class="sidebar__navIcon fas fa-search"></i>
+                    <span class="sidebar__navText">Поиск</span>
+                </a>
+    
+                <!-- Поисковая строка (скрыта изначально) -->
+                <div id="searchBoxContainer" class="search-box-container">
+                    <input type="text" id="search" placeholder="Поиск..." oninput="showSuggestions()">
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                </div>
+            
+            
+            </div>
+    
+    
+    
+            <!-- Language Selector -->
+            <div class="language-item" id="language-item">
+                <i class="sidebar__navIcon fas fa-globe"></i>
+                <span class="sidebar__navText">Язык</span>
+            </div>
+            <div class="language-dropdown" id="language-dropdown">
+                <a href="#" data-lang="hy">Հայերեն</a>
+                <a class="ru" href="#" data-lang="ru">Русский</a>
+                <a href="#" data-lang="en">English</a>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="buttons-container">
+                <button class="scroll-button" id="truck-button">Грузовик</button>
+                <button class="scroll-button" id="concrete-button">Бетоновоз</button>
+            </div>
+            <div class="container">
+                <section class="truck-section">
+                    <h2 class="main-section-title">Грузовик</h2>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/faw-ca.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">FAW CA3250</h2>
+                            <p class="section-text">Мощное транспортное средство, предназначенное для перевозки тяжелых грузов, обеспечивающее отличную стабильность и выносливость в любых дорожных условиях.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/foton-bj1.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">FOTON-Bj1</h2>
+                            <p class="section-text">Эффективное транспортное средство для перевозки грузов, обеспечивающее высокую мобильность и стабильность в различных условиях.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/shacmanx3000.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">Shacman X3000</h2>
+                            <p class="section-text">Высокотехнологичный, надежный грузовик, предназначенный для перевозки больших грузов и дальних поездок.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/howosinutruck.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">HOWO SinoTruck</h2>
+                            <p class="section-text">Идеален для перевозки тяжелых грузов и выполнения трудных задач, гарантируя отличную надежность и долгосрочную службу.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/daf.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">DAF XF510 FTS</h2>
+                            <p class="section-text">Используется для перевозки тяжелых грузов, обеспечивая отличное удобство, стабильность и высокую энергоэффективность на любых дорогах.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/iveco-fat.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">IVECO FIAT</h2>
+                            <p class="section-text">Идеальное транспортное средство для грузовых пассажирских перевозок, обеспечивающее высокую мобильность и надежность в любых условиях.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/kraz-250.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">KrAZ-250</h2>
+                            <p class="section-text">Мощный и надежный грузовик, предлагающий высокую грузоподъемность и отличную производительность в сложных условиях.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/zil-mmz.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">ZiL MMZ-554</h2>
+                            <p class="section-text">Мощный и стабильный грузовик, особенно подходящий для строительных и других тяжелых работ, предлагающий надежность и высокую производительность.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/ford-td.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">FORD Transit 2.4 TD</h2>
+                            <p class="section-text">Надежное и эффективное коммерческое транспортное средство, обеспечивающее высокую грузоподъемность и мобильность.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/cat-02.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">CAT 428-07</h2>
+                            <p class="section-text">Прочная машина, которая улучшает строительные работы, обеспечивая скорость и эффективность в любых условиях.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/hyundai.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">HYUNDAI 180W-95</h2>
+                            <p class="section-text">Универсальная и мощная машина, используемая для строительных работ, обеспечивающая высокую эффективность и комфорт в различных условиях.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="call-section">
+                    <a href="tel:+37493701513">
+                        <button class="call-button">Позвонить</button>
+                    </a>
+                </div>
+                <section class="concrete-section">
+                    <h2 class="main-section-title">Бетоновоз</h2>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/kamaz.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">KAMAZ 53229</h2>
+                            <p class="section-text">Мощный грузовик, обеспечивающий высокую грузоподъемность и стабильность, идеален для различных задач и транспортировки грузов.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/shacman.heic" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">SHACMAN</h2>
+                            <p class="section-text">Обеспечивает равномерное смешивание бетона и безопасную транспортировку, предоставляя надежность, эффективность и высокую продуктивность в строительстве.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/faw.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">FAW</h2>
+                            <p class="section-text">Надежное и долговечное транспортное средство, обеспечивающее стабильное смешивание бетона и эффективную транспортировку.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/sany.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">SANY</h2>
+                            <p class="section-text">Насос, достигающий 37 метров, обеспечивающий эффективную и стабильную подачу бетона для поднятых и удаленных объектов.</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="image-container">
+                            <img src="picture/sitrak.jpg" alt="Изображение 1" class="section-image">
+                        </div>
+                        <div class="title-container">
+                            <h2 class="section-title">SITRAK</h2>
+                            <p class="section-text">Насос, достигающий 62 метров, обеспечивающий эффективную подачу бетона для высоких и удаленных объектов с надежной производительностью.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="call-section">
+                    <a href="tel:+37493701513">
+                        <button class="call-button">Позвонить</button>
+                    </a>
+                </div>
+            </div>    
+        </div>
+        
+  
+
+
+  <div class="contact-section">
+    <div class="logo-section">
+        <!-- Убедитесь, что путь к изображению правильный -->
+        <img src="picture/LIONLOGO.jpg" alt="Логотип компании" />
+        <h3>НОВЕЛ ПЛЮС ООО</h3>
+    </div>
+    <div class="contact-info">
+        <h2>Контакты</h2>
+        <ul>
+            <li><strong>Телефон</strong>: +37493701513, +37491701513</li> <!-- Два номера телефона -->
+            <li><strong>Электронная почта</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Электронная почта -->
+            <li><strong>Адрес</strong>: район Силикян, 7-я улица, 1/14</li> <!-- Адрес -->
+        </ul>
+    </div>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="phone">
+    <header class="header_ph">
+        <div class="logo-container_ph">
+            <!-- Wrap the logo and company name with an anchor tag -->
+            <a href="#" class="logo-link_ph">
+                <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+                <span class="company-name_ph">НОВЕЛ ПЛЮС</span>
+            </a>
+        </div>
+        <div class="search-container_ph">
+            <input type="text" id="search_ph" placeholder="Поиск..." class="search-bar_ph" />
+            <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+        </div>
+                     
+        
+        <div class="language-item_ph nav-button_ph" id="language-item_ph">
+            <i class="sidebar__navIcon_ph fas fa-globe"></i>
+        </div>
+    </header>
+
+    <div class="language-dropdown_ph" id="language-dropdown_ph">
+        <a href="#" data-lang="hy">Հայերեն</a>
+        <a class="ru_ph" href="#" data-lang="ru">Русский</a>
+        <a href="#" data-lang="en">English</a>
+    </div>
+
+
+  <main class="main-content_ph">
+    <div class="content-container_ph">
+        <div class="buttons-container_ph">
+            <button class="scroll-button_ph" id="truck-button_ph">Грузовик</button>
+            <button class="scroll-button_ph" id="concrete-button_ph">Бетоновоз</button>
+        </div>
+        <div class="container_ph">
+            <section class="truck-section_ph">
+                <h2 class="main-section-title_ph">Грузовик</h2>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/faw-ca.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">FAW CA3250</h2>
+                        <p class="section-text_ph">Мощное транспортное средство, предназначенное для перевозки тяжелых грузов, обеспечивающее отличную стабильность и выносливость в любых дорожных условиях.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/foton-bj1.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">FOTON-Bj1</h2>
+                        <p class="section-text_ph">Эффективное транспортное средство для перевозки грузов, обеспечивающее высокую мобильность и стабильность в различных условиях.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/shacmanx3000.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">Shacman X3000</h2>
+                        <p class="section-text_ph">Высокотехнологичный, надежный грузовик, предназначенный для перевозки больших грузов и дальних поездок.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/howosinutruck.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">HOWO SinoTruck</h2>
+                        <p class="section-text_ph">Идеален для перевозки тяжелых грузов и выполнения трудных задач, гарантируя отличную надежность и долгосрочную службу.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/daf.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">DAF XF510 FTS</h2>
+                        <p class="section-text_ph">Используется для перевозки тяжелых грузов, обеспечивая отличное удобство, стабильность и высокую энергоэффективность на любых дорогах.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/iveco-fat.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">IVECO FIAT</h2>
+                        <p class="section-text_ph">Идеальное транспортное средство для грузовых пассажирских перевозок, обеспечивающее высокую мобильность и надежность в любых условиях.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/kraz-250.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">KrAZ-250</h2>
+                        <p class="section-text_ph">Мощный и надежный грузовик, предлагающий высокую грузоподъемность и отличную производительность в сложных условиях.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/zil-mmz.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">ZiL MMZ-554</h2>
+                        <p class="section-text_ph">Мощный и стабильный грузовик, особенно подходящий для строительных и других тяжелых работ, предлагающий надежность и высокую производительность.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/ford-td.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">FORD Transit 2.4 TD</h2>
+                        <p class="section-text_ph">Надежное и эффективное коммерческое транспортное средство, обеспечивающее высокую грузоподъемность и мобильность.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/cat-02.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">CAT 428-07</h2>
+                        <p class="section-text_ph">Прочная машина, которая улучшает строительные работы, обеспечивая скорость и эффективность в любых условиях.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/hyundai.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">HYUNDAI 180W-95</h2>
+                        <p class="section-text_ph">Универсальная и мощная машина, используемая для строительных работ, обеспечивающая высокую эффективность и комфорт в различных условиях.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="call-section_ph">
+                <a href="tel:+37493701513">
+                    <button class="call-button_ph">Позвонить</button>
+                </a>
+            </div>
+            <section class="concrete-section_ph">
+                <h2 class="main-section-title_ph">Бетоновоз</h2>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/kamaz.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">KAMAZ 53229</h2>
+                        <p class="section-text_ph">Мощный грузовик, обеспечивающий высокую грузоподъемность и стабильность, идеален для различных задач и транспортировки грузов.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/shacman.heic" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">SHACMAN</h2>
+                        <p class="section-text_ph">Обеспечивает равномерное смешивание бетона и безопасную транспортировку, предоставляя надежность, эффективность и высокую продуктивность в строительстве.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/faw.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">FAW</h2>
+                        <p class="section-text_ph">Надежное и долговечное транспортное средство, обеспечивающее стабильное смешивание бетона и эффективную транспортировку.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/sany.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">SANY</h2>
+                        <p class="section-text_ph">Насос, достигающий 37 метров, обеспечивающий эффективную и стабильную подачу бетона для поднятых и удаленных объектов.</p>
+                    </div>
+                </div>
+                <div class="section_ph">
+                    <div class="image-container_ph">
+                        <img src="picture/sitrak.jpg" alt="Изображение 1" class="section-image_ph">
+                    </div>
+                    <div class="title-container_ph">
+                        <h2 class="section-title_ph">SITRAK</h2>
+                        <p class="section-text_ph">Насос, достигающий 62 метров, обеспечивающий эффективную подачу бетона для высоких и удаленных объектов с надежной производительностью.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="call-section_ph">
+                <a href="tel:+37493701513">
+                    <button class="call-button_ph">Позвонить</button>
+                </a>
+            </div>
+        </div>    
+    </div>
+    
+
+
+            
+            
+<div class="contact-section_ph">
+    <div class="logo-section_ph">
+        <!-- Убедитесь, что путь к изображению правильный -->
+        <img src="picture/LIONLOGO.jpg" alt="Логотип компании" />
+        <h3>НОВЕЛ ПЛЮС ООО</h3>
+    </div>
+    <div class="contact-info_ph">
+        <h2>Контакты</h2>
+        <ul>
+            <li><strong>Телефон</strong>: +37493701513, +37491701513</li> <!-- Два номера телефона -->
+            <li><strong>Электронная почта</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Электронная почта -->
+            <li><strong>Адрес</strong>: район Силикиан, 7-я улица, 1/14</li> <!-- Адрес -->
+        </ul>
+    </div>
+</div>
+</main>
+        
+            <nav class="bottom-nav_ph">
+                <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+                <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+                <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+                <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+                <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+            </nav>
+        
+    </div>
+
+    <script src="ru_services.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>NOVEL PLUS - About Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="en_aboutus.css">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div class="comp">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <!-- Company Logo and Name -->
+            <a href="#home" class="logo-link">
+                <div class="logo-text">
+                    <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Company Logo">
+                    <span id="logo-text">NOVEL PLUS</span>
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-home"></i>
+                <span class="sidebar__navText">Home</span>
+            </a>
+            <a href="#stone" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-gem"></i>
+                <span class="sidebar__navText">Stones</span>
+            </a>
+            <a href="#services" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-truck"></i>
+                <span class="sidebar__navText">Services</span>
+            </a>
+            <a href="#concrete" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-city"></i>
+                <span class="sidebar__navText">Concrete</span>
+            </a>
+            <a href="#about" class="sidebar__navItem aboutus-item">
+                <i class="sidebar__navIcon fas fa-info-circle"></i>
+                <span class="sidebar__navText">About Us</span>
+            </a>
+            <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                <i class="sidebar__navIcon fas fa-search"></i>
+                <span class="sidebar__navText">Search</span>
+            </a>
+
+            <!-- Search Box (Hidden Initially) -->
+            <div id="searchBoxContainer" class="search-box-container">
+                <input type="text" id="search" placeholder="Search..." oninput="showSuggestions()">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        
+        
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-item" id="language-item">
+            <i class="sidebar__navIcon fas fa-globe"></i>
+            <span class="sidebar__navText">Language</span>
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <a href="#" data-lang="hy">Հայերեն</a>
+            <a href="#" data-lang="ru">Русский</a>
+            <a class="en" href="#" data-lang="en">English</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="main-header">
+            <h1 class="content-title">Our Company</h1>
+            <p>offers high-quality stones, concrete, specific services, and unique projects based on our experience and work.</p>
+        </div>
+        <section class="done-works py-10">
+            <h2 class="text-center text-gold">Completed Works</h2>
+            <div class="gallery">
+                <div class="work-item">
+                    <img src="picture/building9.jpg" alt="Work 1"/>
+                </div>
+                <div class="work-item">
+                    <p class="content-text">Our company has achieved great success by carrying out high-quality projects in building construction and other structures. We have worked to provide strong and long-lasting solutions. Each project has been implemented with great attention, taking care of both the details and the special requirements of the clients.</p>
+                </div>
+                <div class="work-item">
+                    <p class="content-text">The most widely used technologies and our approaches ensure not only the high strength of the structures but also their long-term use. We provide high-quality stones for construction, ensuring beautiful and durable buildings.</p>
+                </div>
+                <div class="work-item">
+                    <img src="picture/building2.jpg" alt="Work 2"/>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="picture/building1.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+                <img src="picture/building4.heic" alt="Little 2" class="content-little-pic scroll-effect">
+                <img src="picture/building7.heic" alt="Little 3" class="content-little-pic scroll-effect">
+                <img src="picture/building10.heic" alt="Little 4" class="content-little-pic scroll-effect">
+            </div>    
+        </section>
+        <section class="done-works py-10">
+            <h2 class="text-center text-gold">Floor Stone Cladding</h2>
+            <div class="image-container-stones">
+                <img src="picture/hoe1.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+                <img src="picture/hoe4.HEIC" alt="Little 2" class="content-little-pic scroll-effect">
+                <img src="picture/hoe2.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+            </div>    
+            <p class="container-text">Our stones are also ideal for flooring mosaics and cladding. Our stones provide decorative solutions that offer both visual pleasure and long-lasting resistance.</p>
+        </section>
+        <h2 class="text-center text-gold">Graveyards</h2>
+        <section class="pictures-section">
+            <div class="left-part">
+                <img src="picture/building8.jpg" alt="Work 1" class="left-image"/>
+            </div>
+            <div class="right-part">
+                <img src="picture/stone1.jpg" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone2.jpg" alt="Little 2" class="right-pic scroll-effect">
+                <img src="picture/stone6.JPG" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone11.jpg" alt="Little 2" class="right-pic scroll-effect">
+            </div>              
+        </section>
+        <p class="container-text-pic">We provide special selected stones that stand out with their high quality and timeless beauty, ensuring a lasting and natural look.</p>
+    
+        <section class="done-works py-10">
+            <h2 class="text-center text-gold">Fountains</h2>
+            <div class="image-container-stones">
+                <img src="picture/fountain2.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+                <img src="picture/fountain1.jpg" alt="Little 2" class="content-little-pic scroll-effect">
+                <img src="picture/fountain3.jpg" alt="Little 1" class="content-little-pic scroll-effect">
+            </div>    
+            <p class="container-text">Our fountains are made from high-quality stones that ensure their durability and long-term use.</p>
+        </section>
+        <h2 class="text-center text-gold">Decorative Stones</h2>
+        <section class="pictures-section">
+            <div class="left-part">
+                <img src="picture/building5.jpg" alt="Work 1" class="left-image"/>
+            </div>
+            <div class="right-part">
+                <img src="picture/stone12.heic" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone8.jpg" alt="Little 2" class="right-pic scroll-effect">
+                <img src="picture/stone3.jpg" alt="Little 1" class="right-pic scroll-effect">
+                <img src="picture/stone4.jpg" alt="Little 2" class="right-pic scroll-effect">
+            </div>              
+        </section>
+        <p class="container-text-pic">We provide high-quality decorative stones that are used to enhance the exterior appearance of buildings and highlight their beauty.</p>
+    
+        <section class="final-thoughts py-10">
+            <h2 class="text-center text-gold">Discounted Prices</h2>
+            <p class="text-center">We guarantee quality and offer the best prices.</p>
+        </section>
+    </div>
+    
+    <div class="contact-section">
+        <div class="logo-section">
+            <!-- Make sure the image path is correct -->
+            <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+            <h3>NOVEL PLUS LLC</h3>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                <li><strong>Address</strong>: Silikian District, 7th Street, 1/14</li> <!-- Address -->
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+
+
+
+
+
+
+    <div class="phone">
+            <header class="header_ph">
+                <div class="logo-container_ph">
+                    <!-- Wrap the logo and company name with an anchor tag -->
+                    <a href="#" class="logo-link_ph">
+                        <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
+                        <span class="company-name_ph">NOVEL PLUS</span>
+                    </a>
+                </div>
+                <div class="search-container_ph">
+                    <input type="text" id="search_ph" placeholder="Search..." class="search-bar_ph" />
+                    <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+                </div>
+                             
+                
+                <div class="language-item_ph nav-button_ph" id="language-item_ph">
+                    <i class="sidebar__navIcon_ph fas fa-globe"></i>
+                </div>
+            </header>
+        
+            <div class="language-dropdown_ph" id="language-dropdown_ph">
+                <a href="#" data-lang="hy">Հայերեն</a>
+                <a href="#" data-lang="ru">Русский</a>
+                <a class="en_ph" href="#" data-lang="en">English</a>
+            </div>
+            <div class="content_ph">
+                <div class="main-header_ph">
+                    <h1 class="content-title_ph">Our Company</h1>
+                    <p class="main-text_ph">offers high-quality stones, concrete, specific services, and unique projects based on our experience and work.</p>
+                </div>
+                <section class="done-works_ph py-10_ph">
+                    <h2 class="text-center_ph text-gold_ph">Completed Works</h2>
+                    <div class="gallery_ph">
+                        <div class="work-item_ph">
+                            <img src="picture/building9.jpg" alt="Work 1"/>
+                        </div>
+                        <div class="work-item_ph">
+                            <p class="content-text_ph">Our company has achieved great success by carrying out high-quality projects in building construction and other structures. We have worked to provide strong and long-lasting solutions. Each project has been implemented with great attention, taking care of both the details and the special requirements of the clients.</p>
+                        </div>
+                        <div class="work-item_ph">
+                            <p class="content-text_ph">The most widely used technologies and our approaches ensure not only the high strength of the structures but also their long-term use. We provide high-quality stones for construction, ensuring beautiful and durable buildings.</p>
+                        </div>
+                        <div class="work-item_ph">
+                            <img src="picture/building2.jpg" alt="Work 2"/>
+                        </div>  
+                    </div>
+                    <div class="image-container_ph">
+                        <img src="picture/building1.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                        <img src="picture/building4.heic" alt="Little 2" class="content-little-pic_ph zoomable_ph">
+                        <img src="picture/building7.heic" alt="Little 3" class="content-little-pic_ph zoomable_ph">
+                        <img src="picture/building10.heic" alt="Little 4" class="content-little-pic_ph zoomable_ph">
+                    </div>    
+                </section>
+                
+                <section class="done-works_ph py-10_ph">
+                    <h2 class="text-center_ph text-gold_ph pic-text-f">Floor Stone Cladding</h2>
+                    <div class="image-container-stones_ph">
+                        <img src="picture/hoe1.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                        <img src="picture/hoe4.HEIC" alt="Little 2" class="content-little-pic_ph zoomable_ph">
+                        <img src="picture/hoe2.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                    </div>    
+                    <p class="container-text_ph">Our stones are also ideal for flooring mosaics and cladding. Our stones provide decorative solutions that offer both visual pleasure and long-lasting resistance.</p>
+                </section>
+                
+                <section class="whole-pictures_ph">
+                    <h2 class="text-center_ph text-gold_ph pic-text-g">Graveyards</h2>
+                    <div class="pictures-section_ph">
+                        <div class="left-part_ph">
+                            <img src="picture/building8.jpg" alt="Work 1" class="left-image_ph"/>
+                        </div>
+                        <div class="right-part_ph">
+                            <img src="picture/stone1.jpg" alt="Little 1" class="right-pic_ph zoomable_ph">
+                            <img src="picture/stone2.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                            <img src="picture/stone6.JPG" alt="Little 1" class="right-pic_ph zoomable_ph">
+                            <img src="picture/stone11.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                        </div>              
+                    </div>
+                    <p class="container-text-pic_ph">We provide special selected stones that stand out with their high quality and timeless beauty, ensuring a lasting and natural look.</p>
+                </section>
+                
+                <section class="done-works_ph py-10_ph">
+                    <h2 class="text-center_ph text-gold_ph pic-text-c">Fountains</h2>
+                    <div class="image-container-stones_ph">
+                        <img src="picture/fountain2.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                        <img src="picture/fountain1.jpg" alt="Little 2" class="content-little-pic_ph zoomable_ph">
+                        <img src="picture/fountain3.jpg" alt="Little 1" class="content-little-pic_ph zoomable_ph">
+                    </div>    
+                    <p class="container-text_ph">Our fountains are made from high-quality stones that ensure their durability and long-term use.</p>
+                </section>
+                
+                <section class="whole-pictures_ph">
+                    <h2 class="text-center_ph text-gold_ph pic-text-dz">Decorative Stones</h2>
+                    <section class="pictures-section_ph">
+                        <div class="left-part_ph">
+                            <img src="picture/building5.jpg" alt="Work 1" class="left-image_ph"/>
+                        </div>
+                        <div class="right-part_ph">
+                            <img src="picture/stone12.heic" alt="Little 1" class="right-pic_ph zoomable_ph">
+                            <img src="picture/stone8.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                            <img src="picture/stone3.jpg" alt="Little 1" class="right-pic_ph zoomable_ph">
+                            <img src="picture/stone4.jpg" alt="Little 2" class="right-pic_ph zoomable_ph">
+                        </div>              
+                    </section>
+                    <p class="container-text-pic_ph">We provide high-quality decorative stones that are used to enhance the exterior of buildings and highlight their beauty.</p>
+                </section>
+                
+                <section class="final-thoughts_ph py-10_ph">
+                    <h2 class="text-center_ph text-gold_ph">Discounted Prices</h2>
+                    <p class="text-center_ph">We guarantee quality and offer the best prices.</p>
+                </section>
+            </div>
+            <div class="contact-section_ph">
+                <div class="logo-section_ph">
+                    <!-- Make sure the image path is correct -->
+                    <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
+                    <h3>NOVEL PLUS LLC</h3>
+                </div>
+                <div class="contact-info_ph">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><strong>Phone</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                        <li><strong>Email</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                        <li><strong>Address</strong>: Silikyan District, 7 Street, 1/14</li> <!-- Address -->
+                    </ul>
+                </div>
+            </div>
+            </main>
+            <nav class="bottom-nav_ph">
+                <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+                <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+                <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+                <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+                <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+            </nav>
+            
+            </div>
+            
+    <script src="en_aboutus.js"></script>
+</body>
+</html>

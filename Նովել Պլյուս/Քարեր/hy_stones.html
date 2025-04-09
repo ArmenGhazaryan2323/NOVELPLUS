@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>ՆՈՎԵԼ ՊԼՅՈՒՍ - Քարեր</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="pictures stones/LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="hy_stones.css">
+</head>
+<body>
+    <div class="comp">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__header">
+            <!-- Company Logo and Name -->
+            <a href="#home" class="logo-link">
+                <div class="logo-text">
+                    <img class="sidebar__logo" src="pictures stones/LOGO.jpg" alt="Company Logo">
+                    <span id="logo-text">ՆՈՎԵԼ ՊԼՅՈՒՍ</span>
+                </div>
+            </a>
+        </div>
+
+        
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-home"></i>
+                <span class="sidebar__navText">Գլխավոր</span>
+            </a>
+            <a href="#stone" class="sidebar__navItem stone_item">
+                <i class="sidebar__navIcon fas fa-gem"></i>
+                <span class="sidebar__navText">Քարեր</span>
+            </a>
+            <a href="#services" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-truck"></i>
+                <span class="sidebar__navText">Ծառայություններ</span>
+            </a>
+            <a href="#concrete" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-city"></i>
+                <span class="sidebar__navText">Բետոն</span>
+            </a>
+            <a href="#about" class="sidebar__navItem">
+                <i class="sidebar__navIcon fas fa-info-circle"></i>
+                <span class="sidebar__navText">Մեր մասին</span>
+            </a>
+            <a href="#" class="sidebar__navItem search_icon" id="search-trigger">
+                <i class="sidebar__navIcon fas fa-search"></i>
+                <span class="sidebar__navText">Որոնել</span>
+            </a>
+
+            <!-- Search Box (Hidden Initially) -->
+            <div id="searchBoxContainer" class="search-box-container">
+                <input type="text" id="search" placeholder="Որոնել..." oninput="showSuggestions()">
+                <ul id="suggestions" class="suggestions-list"></ul>
+            </div>
+        </div>
+
+
+        <!-- Language Selector -->
+        <div class="language-item" id="language-item">
+            <i class="sidebar__navIcon fas fa-globe"></i>
+            <span class="sidebar__navText">Լեզու</span>
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <a class="hy" href="#" data-lang="hy">Հայերեն</a>
+            <a href="#" data-lang="ru">Русский</a>
+            <a href="#" data-lang="en">English</a>
+        </div>
+    </div>
+
+    <section class="product-section travertine" id="stones">
+        <div class="product-line">
+            <img src="pictures stones/travertine.jpg" alt="Stones" />
+            <div class="content-container ">
+                <h2 class="title-stones">Տրավերտին</h2>
+                <p class="text-stones">Ունի չքնաղ բնական սպիտակ երանգ, որը հիանալիորեն համադրվում է տարբեր ոճերի հետ։ Դրա ուժեղ դիմադրությունը և արտասովոր գեղեցկությունը թույլ են տալիս ստեղծել անփոխարինելի հարդարանքներ։</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-section tuff" id="stones">
+        <div class="product-line">
+            <img src="pictures stones/tuff.JPG" alt="Stones" />
+            <div class="content-container ">
+                <h2 class="title-stones">Սև Տուֆ</h2>
+                <p class="text-stones">Տպավորում է իր բնորոշ մութ երանգով, որն ապահովում է բազմազան ու միատեսակ դիզայններ։ Այն իդեալական է օգտագործման համար, որտեղ պահանջվում է ամրություն և յուրահատուկ տեսք։</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-section basalt" id="concrete">
+        <div class="product-line">
+            <img src="pictures stones/basalt.JPG" alt="Concrete"/>
+            <div class="content-container ">
+                <h2 class="title-concrete">Բազալտ</h2>
+                <p class="text-concrete">Կատարյալ ընտրություն է ամենատարբեր շինարարական նախագծերի համար։ Ունի գեղեցիկ և բազմագույն երանգներ, որոնք հիանալիորեն համադրվում են տարբեր դիզայնների և ստեղծում են էլեգանտ ու մշտապես նորաձև հարդարանքներ։</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="contact-section">
+        <div class="logo-section">
+            <!-- Make sure the image path is correct -->
+            <img src="pictures stones/LIONLOGO.jpg" alt="Company Logo" />
+            <h3>ՆՈՎԵԼ ՊԼՅՈՒՍ ՍՊԸ</h3>
+        </div>
+        <div class="contact-info">
+            <h2>Հետադարձ Կապ</h2>
+            <ul>
+                <li><strong>Հեռախոս</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                <li><strong>Էլ-փոստ</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                <li><strong>Հասցե</strong>: Սիլիկյան թաղամաս 7 փող. 1/14</li> <!-- Address -->
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="phone">
+    <header class="header_ph">
+        <div class="logo-container_ph">
+            <!-- Wrap the logo and company name with an anchor tag -->
+            <a href="#" class="logo-link_ph">
+                <img src="pictures stones/LOGO.jpg" alt="Company Logo" class="company-logo_ph">
+                <span class="company-name_ph">ՆՈՎԵԼ ՊԼՅՈՒՍ</span>
+            </a>
+        </div>
+        <div class="search-container_ph">
+            <input type="text" id="search_ph" placeholder="Որոնել..." class="search-bar_ph" />
+            <ul id="suggestions_ph" class="suggestions-list_ph"></ul>
+        </div>
+                     
+        
+        <div class="language-item_ph nav-button_ph" id="language-item_ph">
+            <i class="sidebar__navIcon_ph fas fa-globe"></i>
+        </div>
+    </header>
+
+    <div class="language-dropdown_ph" id="language-dropdown_ph">
+        <a class="hy_ph" href="#" data-lang="hy">Հայերեն</a>
+        <a href="#" data-lang="ru">Русский</a>
+        <a href="#" data-lang="en">English</a>
+    </div>
+
+
+
+    <main class="main-content_ph">
+        <section class="product-section_ph" id="stones_ph">
+            <div class="product-line_ph">
+                <img src="pictures stones/travertine.jpg" alt="Stones" class="section-image_ph"/>
+                <div class="content-container_ph travertine-section">
+                    <h2 class="title-stones_ph" >Տրավերտին</h2>
+                    <p class="text-stones_ph">Ունի չքնաղ բնական սպիտակ երանգ, որը հիանալիորեն համադրվում է տարբեր ոճերի հետ։ Դրա ուժեղ դիմադրությունը և արտասովոր գեղեցկությունը թույլ են տալիս ստեղծել անփոխարինելի հարդարանքներ։</p>
+                </div>
+            </div>
+        </section>
+        <section class="product-section_ph" id="services_ph">
+            <div class="product-line_ph">
+                <img src="pictures stones/tuff.JPG" alt="Stones" class="section-image_ph"/>
+                <div class="content-container_ph tuff-section">
+                    <h2 class="title-stones_ph">Սև Տուֆ</h2>
+                    <p class="text-stones_ph">Տպավորում է իր բնորոշ մութ երանգով, որն ապահովում է բազմազան ու միատեսակ դիզայններ։ Այն իդեալական է օգտագործման համար, որտեղ պահանջվում է ամրություն և յուրահատուկ տեսք։</p>
+                </div>
+            </div>
+        </section>
+        <section class="product-section_ph" id="concrete_ph">
+            <div class="product-line_ph">
+                <img src="pictures stones/basalt.JPG" alt="Concrete" class="section-image_ph"/>
+                <div class="content-container_ph basalt-section">
+                    <h2 class="title-concrete_ph">Բազալտ</h2>
+                    <p class="text-concrete_ph">Կատարյալ ընտրություն է ամենատարբեր շինարարական նախագծերի համար։ Ունի գեղեցիկ և բազմագույն երանգներ, որոնք հիանալիորեն համադրվում են տարբեր դիզայնների և ստեղծում են էլեգանտ ու մշտապես նորաձև հարդարանքներ։</p>
+                </div>
+            </div>
+        </section>
+    
+
+        <div class="contact-section_ph">
+            <div class="logo-section_ph">
+                <!-- Make sure the image path is correct -->
+                <img src="pictures stones/LIONLOGO.jpg" alt="Company Logo" />
+                <h3>ՆՈՎԵԼ ՊԼՅՈՒՍ ՍՊԸ</h3>
+            </div>
+
+
+            <div class="contact-info_ph">
+                <h2>Հետադարձ Կապ</h2>
+                <ul>
+                    <li><strong>Հեռախոս</strong>: +37493701513, +37491701513</li> <!-- Two phone numbers -->
+                    <li><strong>Էլ-փոստ</strong>: <a href="mailto:novelplus79@mail.ru">novelplus79@mail.ru</a></li> <!-- Email -->
+                    <li><strong>Հասցե</strong>: Սիլիկյան թաղամաս 7 փող. 1/14</li> <!-- Address -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav_ph">
+        <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+        <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+        <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+        <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+        <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+    </nav>
+
+</div>
+    <script src="hy_stones.js"></script>
+</body>
+</html>
