@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=2.0">
 
     <title>НОВЕЛ ПЛЮС - Главная</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="pictures/LOGO.jpg" type="image/x-icon">
+    <link rel="icon" href="picture/LOGOHEAD.png" type="image/x-icon">
     <link rel="stylesheet" href="ru_novelplus.css">
     <meta charset="UTF-8">
 
@@ -16,9 +16,9 @@
     <div class="sidebar">
         <div class="sidebar__header">
             <!-- Company Logo and Name -->
-            <a href="#home" class="logo-link">
+            <a onclick="window.location.reload();" href="#" class="logo-link">
                 <div class="logo-text">
-                    <img class="sidebar__logo" src="pictures/LOGO.jpg" alt="Company Logo">
+                    <img class="sidebar__logo" src="picture/LOGO.jpg" alt="Company Logo">
                     <span id="logo-text">НОВЕЛ ПЛЮС</span>
                 </div>
             </a>
@@ -26,23 +26,23 @@
 
         
         <div class="sidebar__nav">
-            <a href="#home" class="sidebar__navItem home-item">
+            <a onclick="window.location.reload();" href="#home" class="sidebar__navItem home-item">
                 <i class="sidebar__navIcon fas fa-home"></i>
                 <span class="sidebar__navText">Главная</span>
             </a>
-            <a href="#stone" class="sidebar__navItem">
+            <a href="/Камни/ru_stones.html" class="sidebar__navItem">
                 <i class="sidebar__navIcon fas fa-gem"></i>
                 <span class="sidebar__navText">Камни</span>
             </a>
-            <a href="#services" class="sidebar__navItem">
+            <a href="/Услуги/ru_services.html" class="sidebar__navItem">
                 <i class="sidebar__navIcon fas fa-truck"></i>
                 <span class="sidebar__navText">Услуги</span>
             </a>
-            <a href="#concrete" class="sidebar__navItem">
+            <a href="/Бетон/ru_concrete.html" class="sidebar__navItem">
                 <i class="sidebar__navIcon fas fa-city"></i>
                 <span class="sidebar__navText">Бетон</span>
             </a>
-            <a href="#about" class="sidebar__navItem">
+            <a href="/О нас/ru_aboutus.html" class="sidebar__navItem">
                 <i class="sidebar__navIcon fas fa-info-circle"></i>
                 <span class="sidebar__navText">О нас</span>
             </a>
@@ -66,16 +66,16 @@
             <span class="sidebar__navText">Язык</span>
         </div>
         <div class="language-dropdown" id="language-dropdown">
-            <a href="#" data-lang="hy">Հայերեն</a>
+            <a href="/Գլխավոր/hy_novelplus.html" data-lang="hy">Հայերեն</a>
             <a class="ru" href="#" data-lang="ru">Русский</a>
-            <a href="#" data-lang="en">English</a>
+            <a href="/Home/en_novelplus.html" data-lang="en">English</a>
         </div>
     </div>
 
     <section class="product-section" id="stones">
-        <a href="#">
+        <a href="/Камни/ru_stones.html">
         <div class="product-line">
-            <img src="pictures/stone 1.JPG" alt="Stones" class="section-picture"/>
+            <img src="picture/stone 1.JPG" alt="Stones" class="section-picture"/>
             <div class="content-container left">
                 <h2 class="title-stones">Камни для облицовки</h2>
                 <p class="text-stones">Камни для облицовки обеспечивают прочность и защиту здания, подчеркивая его эстетическую красоту. Наши камни отличаются высоким качеством, прочностью и разнообразием цветовых решений.</p>
@@ -85,31 +85,31 @@
     </section>
     
     <section class="product-section" id="services">
-        <a href="#">
+        <a href="/Услуги/ru_services.html">
         <div class="product-line">
             <div class="content-container right">
                 <h2 class="title-services">Услуги</h2>
                 <p class="text-services">Наши услуги включают транспортировку строительных материалов, поставку бетона и выполнение бетонных работ с использованием специальной техники, что позволяет обеспечить надежные и эффективные услуги для вас.</p>
             </div>
-            <img src="pictures/truck 4.jpg" alt="Services" class="section-picture"/>
+            <img src="picture/truck 4.jpg" alt="Services" class="section-picture"/>
         </div>
     </a>
     </section>
     
     <section class="product-section" id="concrete">
-        <a href="#">
+        <a href="/Бетон/ru_concrete.html">
         <div class="product-line">
-            <img src="pictures/concrete 3(re).png" alt="Concrete" class="section-picture"/>
+            <img src="picture/concrete 3(re).png" alt="Concrete" class="section-picture"/>
             <div class="content-container left">
                 <h2 class="title-concrete">Бетон</h2>
-                <p class="text-concrete">Бетон - один из важнейших материалов в строительстве, обеспечивающий прочность, стабильность и уровень безопасности зданий. Наш бетон с высоким качеством является лучшим выбором для вашего проекта.</p>
+                <p class="text-concrete">Один из важнейших материалов в строительстве, обеспечивающий прочность, стабильность и уровень безопасности зданий. Наш бетон с высоким качеством является лучшим выбором для вашего проекта.</p>
             </div>
         </div>
         </a>
     </section>
 
     <section class="product-section  about_us" id="services">
-        <a href="#">
+        <a href="/О нас/ru_aboutus.html">
         <div class="product-line">
             <div class="content-container middle">
                 <h2 class="title-services">О нас</h2>
@@ -122,7 +122,7 @@
     <div class="contact-section">
         <div class="logo-section">
             <!-- Make sure the image path is correct -->
-            <img src="pictures/LIONLOGO.jpg" alt="Company Logo" />
+            <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
             <h3>НОВЕЛ ПЛЮС ООО</h3>
         </div>
         <div class="contact-info">
@@ -144,8 +144,8 @@
             <header class="header_ph">
                 <div class="logo-container_ph">
                     <!-- Wrap the logo and company name with an anchor tag -->
-                    <a href="#" class="logo-link_ph">
-                        <img src="pictures/LOGO.jpg" alt="Company Logo" class="company-logo_ph">
+                    <a onclick="window.location.reload();" class="logo-link_ph">
+                        <img src="picture/LOGO.jpg" alt="Company Logo" class="company-logo_ph">
                         <span class="company-name_ph">НОВЕЛ ПЛЮС</span>
                     </a>
                 </div>
@@ -161,52 +161,59 @@
             </header>
         
             <div class="language-dropdown_ph" id="language-dropdown_ph">
-                <a href="#" data-lang="hy">Հայերեն</a>
+                <a href="/Գլխավոր/hy_novelplus.html" data-lang="hy">Հայերեն</a>
                 <a class="ru_ph" href="#" data-lang="ru">Русский</a>
-                <a href="#" data-lang="en">English</a>
+                <a href="/Home/en_novelplus.html" data-lang="en">English</a>
             </div>
-        
             <main class="main-content_ph">
+                <a href="/Камни/ru_stones.html">
                 <section class="product-section_ph" id="stones_ph">
                     <div class="product-line_ph">
-                        <img src="pictures/stone 1.JPG" alt="Stones" class="section-image_ph" />
+                        <img src="picture/stone 1.JPG" alt="Stones" class="section-image_ph" />
                         <div class="content-container_ph left_ph">
                             <h2 class="title-stones_ph">Камни для облицовки</h2>
-                            <p class="text-stones_ph">Камни для облицовки обеспечивают прочность и защиту здания, подчеркивая его эстетическую красоту. Наши камни отличаются высоким качеством, прочностью и разнообразием цветовых решений.</p>
+                            <p class="text-stones_ph">Камни для облицовки обеспечивают прочность и защиту здания, подчеркивая его эстетическую красоту.</p>
                         </div>
                     </div>
                 </section>
+            </a>
+            <a href="/Услуги/">
                 <section class="product-section_ph" id="services_ph">
                     <div class="product-line_ph">
                         <div class="content-container_ph right_ph">
                             <h2 class="title-services_ph">Услуги</h2>
-                            <p class="text-services_ph">Наши услуги включают транспортировку строительных материалов, поставку бетона и выполнение бетонных работ с использованием специальной техники, что позволяет обеспечить надежные и эффективные услуги для вас.</p>
+                            <p class="text-services_ph">Наши услуги включают транспортировку строительных материалов, поставку бетона и выполнение бетонных работ.</p>
                         </div>
-                        <img src="pictures/truck 4.jpg" alt="Services" class="section-image_ph" />
+                        <img src="picture/truck 4.jpg" alt="Services" class="section-image_ph" />
                     </div>
                 </section>
+            </a>
+            <a href="/Бетон/">
                 <section class="product-section_ph" id="concrete_ph">
                     <div class="product-line_ph">
-                        <img src="pictures/concrete 3(re).png" alt="Concrete" class="section-image_ph" />
+                        <img src="picture/concrete 3(re).png" alt="Concrete" class="section-image_ph" />
                         <div class="content-container_ph left_ph">
                             <h2 class="title-concrete_ph">Бетон</h2>
-                            <p class="text-concrete_ph">Бетон - один из важнейших материалов в строительстве, обеспечивающий прочность, стабильность и уровень безопасности зданий. Наш бетон с высоким качеством является лучшим выбором для вашего проекта.</p>
+                            <p class="text-concrete_ph">Один из важнейших материалов в строительстве, обеспечивающий прочность, стабильность и уровень безопасности зданий.</p>
                         </div>
                     </div>
                 </section>
+            </a>
+            <a href="/О нас/ru_aboutus.html">
                 <section class="product-section_ph about_us_ph" id="services">
                     <div class="product-line_ph">
                         <div class="content-container_ph middle_ph">
                             <h2 class="title-services_ph">О нас</h2>
-                            <p class="text-about_us_ph">Мы специализируемся на поставке высококачественных строительных материалов, включая бетон и камни. Мы предлагаем различные виды природных камней, которые идеально подходят как для декоративных, так и для строительных целей. Наша команда предоставляет надежное, быстрое и профессиональное обслуживание, чтобы ваши проекты были завершены с наилучшими результатами.</p>
+                            <p class="text-about_us_ph">Мы специализируемся на поставке высококачественных строительных материалов, включая бетон и камни. Наша команда предоставляет надежное, быстрое и профессиональное обслуживание, чтобы ваши проекты были завершены с наилучшими результатами.</p>
                         </div>
                     </div>
                 </section>
+            </a>
                 
                 <div class="contact-section_ph">
                     <div class="logo-section_ph">
                         <!-- Убедитесь, что путь к изображению правильный -->
-                        <img src="pictures/LIONLOGO.jpg" alt="Логотип компании" />
+                        <img src="picture/LIONLOGO.jpg" alt="Логотип компании" />
                         <h3>НОВЕЛ ПЛЮС ООО</h3>
                     </div>
                     <div class="contact-info_ph">
@@ -221,11 +228,11 @@
                 </main>
                 
                 <nav class="bottom-nav_ph">
-                    <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
-                    <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
-                    <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
-                    <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
-                    <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+                    <a onclick="window.location.reload();" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+                    <a href="/Камни/ru_stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+                    <a href="/Услуги/ru_services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+                    <a href="/Бетон/ru_concrete.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+                    <a href="/О нас/ru_aboutus.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
                 </nav>
                 
                 </div>

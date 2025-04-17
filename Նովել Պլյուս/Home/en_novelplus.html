@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>NOVEL PLUS - Home</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="pictures/LOGO.jpg" type="image/x-icon">
+    <link rel="icon" href="picture/LOGOHEAD.png" type="image/x-icon">
     <link rel="stylesheet" href="en_novelplus.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, maximum-scale=2.0, user-scalable=no">
+
 </head>
 <body>
     <div class="comp">
@@ -14,9 +15,9 @@
         <div class="sidebar">
             <div class="sidebar__header">
                 <!-- Company Logo and Name -->
-                <a href="#home" class="logo-link">
+                <a onclick="window.location.reload();" href="#" class="logo-link">
                     <div class="logo-text">
-                        <img class="sidebar__logo" src="pictures/LOGO.jpg" alt="Company Logo">
+                        <img class="sidebar__logo" src="picture/LOGO.jpg" alt="Company Logo">
                         <span id="logo-text">NOVEL PLUS</span>
                     </div>
                 </a>
@@ -24,23 +25,23 @@
     
             
             <div class="sidebar__nav">
-                <a href="#home" class="sidebar__navItem home-item">
+                <a onclick="window.location.reload();" href="#home" class="sidebar__navItem home-item">
                     <i class="sidebar__navIcon fas fa-home"></i>
                     <span class="sidebar__navText">Home</span>
                 </a>
-                <a href="#stone" class="sidebar__navItem">
+                <a href="/Stones/en_stones.html" class="sidebar__navItem">
                     <i class="sidebar__navIcon fas fa-gem"></i>
                     <span class="sidebar__navText">Stones</span>
                 </a>
-                <a href="#services" class="sidebar__navItem">
+                <a href="/Services/en_services.html" class="sidebar__navItem">
                     <i class="sidebar__navIcon fas fa-truck"></i>
                     <span class="sidebar__navText">Services</span>
                 </a>
-                <a href="#concrete" class="sidebar__navItem">
+                <a href="/Concrete/en_concrete.html" class="sidebar__navItem">
                     <i class="sidebar__navIcon fas fa-city"></i>
                     <span class="sidebar__navText">Concrete</span>
                 </a>
-                <a href="#about" class="sidebar__navItem">
+                <a href="/About us/en_aboutus.html" class="sidebar__navItem">
                     <i class="sidebar__navIcon fas fa-info-circle"></i>
                     <span class="sidebar__navText">About Us</span>
                 </a>
@@ -65,16 +66,16 @@
                 <span class="sidebar__navText">Language</span>
             </div>
             <div class="language-dropdown" id="language-dropdown">
-                <a href="#" data-lang="hy">Հայերեն</a>
-                <a href="#" data-lang="ru">Русский</a>
-                <a class="en"href="#" data-lang="en">English</a>
+                <a href="/Գլխավոր/hy_novelplus.html" data-lang="hy">Հայերեն</a>
+                <a href="/Главное/ru_novelplus.html" data-lang="ru">Русский</a>
+                <a class="en" onclick="window.location.reload();" data-lang="en">English</a>
             </div>
         </div>
     
         <section class="product-section" id="stones">
-            <a href="#">
+            <a href="/Stones/en_stones.html">
             <div class="product-line">
-                <img src="pictures/stone 1.JPG" alt="Stones" class="section-picture"/>
+                <img src="picture/stone 1.JPG" alt="Stones" class="section-picture"/>
                 <div class="content-container left">
                     <h2 class="title-stones">Facing Stones</h2>
                     <p class="text-stones">Facing stones provide the building's durability and protection, highlighting its aesthetic beauty. The stones we offer are characterized by high quality, strength, and a variety of color solutions.</p>
@@ -84,21 +85,21 @@
         </section>
         
         <section class="product-section" id="services">
-            <a href="#">
+            <a href="/Services/en_services.html">
             <div class="product-line">
                 <div class="content-container right">
                     <h2 class="title-services">Services</h2>
                     <p class="text-services">Our services include the transportation of construction materials, concrete supply, and concrete work using specialized equipment, ensuring reliable and efficient services for you.</p>
                 </div>
-                <img src="pictures/truck 4.jpg" alt="Services" class="section-picture"/>
+                <img src="picture/truck 4.jpg" alt="Services" class="section-picture"/>
             </div>
         </a>
         </section>
         
         <section class="product-section" id="concrete">
-            <a href="#">
+            <a href="/Concrete/en_concrete.html">
             <div class="product-line">
-                <img src="pictures/concrete 3(re).png" alt="Concrete" class="section-picture"/>
+                <img src="picture/concrete 3(re).png" alt="Concrete" class="section-picture"/>
                 <div class="content-container left">
                     <h2 class="title-concrete">Concrete</h2>
                     <p class="text-concrete">Concrete is one of the most important materials in construction, providing the strength, stability, and safety of structures. Our concrete, with high quality, is the best choice for your project.</p>
@@ -108,7 +109,7 @@
         </section>
     
         <section class="product-section  about_us" id="services">
-            <a href="#">
+            <a href="/About us/en_aboutus.html">
             <div class="product-line">
                 <div class="content-container middle">
                     <h2 class="title-services">About Us</h2>
@@ -121,7 +122,7 @@
         <div class="contact-section">
             <div class="logo-section">
                 <!-- Make sure the image path is correct -->
-                <img src="pictures/LIONLOGO.jpg" alt="Company Logo" />
+                <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
                 <h3>NOVEL PLUS LLC</h3>
             </div>
             <div class="contact-info">
@@ -141,8 +142,8 @@
         <header class="header_ph">
             <div class="logo-container_ph">
                 <!-- Wrap the logo and company name with an anchor tag -->
-                <a href="#" class="logo-link_ph">
-                    <img src="pictures/LOGO.jpg" alt="Company Logo" class="company-logo_ph">
+                <a onclick="window.location.reload();" class="logo-link_ph">
+                    <img src="picture/LOGO.jpg" alt="Company Logo" class="company-logo_ph">
                     <span class="company-name_ph">NOVEL PLUS</span>
                 </a>
             </div>
@@ -157,53 +158,60 @@
         </header>
     
         <div class="language-dropdown_ph" id="language-dropdown_ph">
-            <a href="#" data-lang="hy">Հայերեն</a>
-            <a href="#" data-lang="ru">Русский</a>
-            <a class="en_ph href="#" data-lang="en">English</a>
+            <a href="/Գլխավոր/hy_novelplus.html" data-lang="hy">Հայերեն</a>
+            <a href="/Главное/ru_novelplus.html" data-lang="ru">Русский</a>
+            <a onclick="window.location.reload();" class="en_ph href="#" data-lang="en">English</a>
         </div>
     
         <main class="main-content_ph">
+            <a href="/Stones/en_stones.html">
             <section class="product-section_ph" id="stones_ph">
                 <div class="product-line_ph">
-                    <img src="pictures/stone 1.JPG" alt="Stones" class="section-image_ph" />
+                    <img src="picture/stone 1.JPG" alt="Stones" class="section-image_ph" />
                     <div class="content-container_ph left_ph">
                         <h2 class="title-stones_ph">Facing Stones</h2>
-                        <p class="text-stones_ph">Facing stones provide the building's durability and protection, highlighting its aesthetic beauty. The stones we offer are characterized by high quality, strength, and a variety of color solutions.</p>
+                        <p class="text-stones_ph">Facing stones provide the building's durability and protection, highlighting its aesthetic beauty.</p>
                     </div>
                 </div>
             </section>
+            </a>
+            <a href="/Services/en_services.html">
             <section class="product-section_ph" id="services_ph">
                 <div class="product-line_ph">
                     <div class="content-container_ph right_ph">
                         <h2 class="title-services_ph">Services</h2>
-                        <p class="text-services_ph">Our services include the transportation of construction materials, concrete supply, and concrete work using specialized equipment, ensuring reliable and efficient services for you.</p>
+                        <p class="text-services_ph">Our services include the transportation of construction materials, concrete supply, and concrete work.</p>
                     </div>
-                    <img src="pictures/truck 4.jpg" alt="Services" class="section-image_ph" />
+                    <img src="picture/truck 4.jpg" alt="Services" class="section-image_ph" />
                 </div>
             </section>
+            </a>
+            <a href="/Concrete/en_concrete.html">
             <section class="product-section_ph" id="concrete_ph">
                 <div class="product-line_ph">
-                    <img src="pictures/concrete 3(re).png" alt="Concrete" class="section-image_ph" />
+                    <img src="picture/concrete 3(re).png" alt="Concrete" class="section-image_ph" />
                     <div class="content-container_ph left_ph">
                         <h2 class="title-concrete_ph">Concrete</h2>
-                        <p class="text-concrete_ph">Concrete is one of the most important materials in construction, providing the strength, stability, and safety of structures. Our concrete, with high quality, is the best choice for your project.</p>
+                        <p class="text-concrete_ph">Concrete is one of the most important materials in construction, providing the strength, stability, and safety of structures.</p>
                     </div>
                 </div>
             </section>
-    
+            </a>
+            <a href="/About us/en_aboutus.html">
             <section class="product-section_ph about_us_ph" id="services">
                 <div class="product-line_ph">
                     <div class="content-container_ph middle_ph">
                         <h2 class="title-services_ph">About Us</h2>
-                        <p class="text-about_us_ph">We specialize in the supply of high-quality construction materials, including concrete and stones. We offer various types of natural stones that are ideal for both decorative and construction purposes. Our team provides reliable, fast, and professional service to ensure your projects are completed with the best results.</p>
+                        <p class="text-about_us_ph">We specialize in the supply of high-quality construction materials, including concrete and stones. Our team provides reliable, fast, and professional service to ensure your projects are completed with the best results.</p>
                     </div>
                 </div>
             </section>
+            </a>
     
             <div class="contact-section_ph">
                 <div class="logo-section_ph">
                     <!-- Make sure the image path is correct -->
-                    <img src="pictures/LIONLOGO.jpg" alt="Company Logo" />
+                    <img src="picture/LIONLOGO.jpg" alt="Company Logo" />
                     <h3>NOVEL PLUS LLC</h3>
                 </div>
                 <div class="contact-info_ph">
@@ -218,11 +226,11 @@
         </main>
     
         <nav class="bottom-nav_ph">
-            <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
-            <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
-            <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
-            <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
-            <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+            <a onclick="window.location.reload();" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+            <a href="/Stones/en_stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+            <a href="/Services/en_services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+            <a href="/Concrete/en_concrete.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+            <a href="/About us/en_aboutus.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
         </nav>
     
     </div>

@@ -110,31 +110,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // List of stones for search suggestions
     const stones = [
-        { name: "Տրավերտին", link: "travertine.html" },
-            { name: "Բազալտ", link: "basalt.html" },
-            { name: "Սև տուֆ", link: "black-tuff.html" },
-            { name: "Basalt", link: "basalt.html" },
-            { name: "Travertine", link: "travertine.html" },
-            { name: "Black Tuff", link: "black-tuff.html" },
-            { name: "Базальт", link: "basalt.html" },
-            { name: "Черный Туф", link: "black-tuff.html" },
-            { name: "Травертин", link: "travertine.html" },
-            { name: "Բեռնատար", link: "truck.html" },
-            { name: "Բետոնի Մեքենա", link: "concrete-truck.html" },
-            { name: "Այլ Քարեր", link: "other-stones.html" },
-            { name: "Քարեր", link: "other-stones.html" },
-            { name: "Բետոն", link: "concrete.html" },
-            { name: "Truck", link: "truck.html" },
-            { name: "Concrete Truck", link: "concrete-truck.html" },
-            { name: "Other Stones", link: "other-stones.html" },
-            { name: "Stones", link: "other-stones.html" },
-            { name: "Concrete", link: "concrete.html" },
-            { name: "Грузовик", link: "truck.html" },
-            { name: "Бетономешалка", link: "concrete-truck.html" },
-            { name: "Другие Камни", link: "other-stones.html" },
-            { name: "Камни", link: "other-stones.html" },
-            { name: "Бетон", link: "concrete.html" }
-    ];
+        { name: "Տրավերտին", link: "/Տրավերտին/hy_travertine.html" },
+        { name: "Բազալտ", link: "/Բազալտ/hy_basalt.html" },
+        { name: "Սև տուֆ", link: "/Սև Տուֆ/hy_blacktuff.html" },
+        { name: "Բեռնատար", link: "/Ծառայություն/hy_services.html" },
+        { name: "Բետոնի Մեքենա", link: "/Ծառայություն/hy_services.html" },
+        { name: "Այլ Քարեր", link: "/Մեր Մասին/hy_aboutus.html" },
+        { name: "Քարեր", link: "/Քարեր/hy_stones.html" },
+        { name: "Բետոն", link: "/Բետոն/hy_concrete.html" },
+    
+        // English
+        { name: "Travertine", link: "/Travertine/en_travertine.html" },
+        { name: "Basalt", link: "/Basalt/en_basalt.html" },
+        { name: "Black Tuff", link: "/Black Tuff/en_blacktuff.html" },
+        { name: "Truck", link: "/Services/en_services.html" },
+        { name: "Concrete Truck", link: "/Services/en_services.html" },
+        { name: "Other Stones", link: "/About us/en_aboutus.html" },
+        { name: "Stones", link: "/Stones/en_stones.html" },
+        { name: "Concrete", link: "/Concrete/en_concrete.html" },
+    
+        // Russian
+        { name: "Травертин", link: "/Травертин/ru_travertine.html" },
+        { name: "Базальт", link: "/Базальт/ru_basalt.html" },
+        { name: "Черный Туф", link: "/Черный туф/ru_blacktuff.html" },
+        { name: "Грузовик", link: "/Услуги/ru_services.html" },
+        { name: "Бетономешалка", link: "/Услуги/ru_services.html" },
+        { name: "Другие Камни", link: "/О нас/ru_aboutus.html" },
+        { name: "Камни", link: "/Камни/ru_stones.html" },
+        { name: "Бетон", link: "/Бетон/ru_concrete.html" }
+    ];    
 
     function showSuggestions() {
         const query = searchInput.value.trim().toLowerCase();  // Get the value and convert to lowercase
@@ -198,14 +202,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const languageItem_ph = document.getElementById('language-item_ph');
     const languageDropdown_ph = document.getElementById('language-dropdown_ph');
 
-    // Toggle dropdown visibility when language item is clicked
     languageItem_ph.addEventListener('click', (event) => {
         event.stopPropagation();
-        languageDropdown_ph.classList.toggle('active');
-
-        // Change the color of the language item to rgb(123, 123, 123) when clicked
-        languageItem_ph.style.color = 'rgb(123, 123, 123)';
+    
+        if (languageDropdown_ph.classList.contains('active')) {
+            // Dropdown is open, so close it and reset color
+            languageDropdown_ph.classList.remove('active');
+            languageItem_ph.style.color = 'white'; // Revert to white
+        } else {
+            // Open the dropdown and apply active color
+            languageDropdown_ph.classList.add('active');
+            languageItem_ph.style.color = 'rgb(123, 123, 123)';
+        }
     });
+    
 
     
     // Revert color to the previous one when clicked outside the language item or dropdown
@@ -250,31 +260,35 @@ document.addEventListener("DOMContentLoaded", () => {
     
         // Define the array of stones
         const stones_ph = [
-            { name: "Տրավերտին", link: "travertine.html" },
-            { name: "Բազալտ", link: "basalt.html" },
-            { name: "Սև տուֆ", link: "black-tuff.html" },
-            { name: "Basalt", link: "basalt.html" },
-            { name: "Travertine", link: "travertine.html" },
-            { name: "Black Tuff", link: "black-tuff.html" },
-            { name: "Базальт", link: "basalt.html" },
-            { name: "Черный Туф", link: "black-tuff.html" },
-            { name: "Травертин", link: "travertine.html" },
-            { name: "Բեռնատար", link: "truck.html" },
-            { name: "Բետոնի Մեքենա", link: "concrete-truck.html" },
-            { name: "Այլ Քարեր", link: "other-stones.html" },
-            { name: "Քարեր", link: "other-stones.html" },
-            { name: "Բետոն", link: "concrete.html" },
-            { name: "Truck", link: "truck.html" },
-            { name: "Concrete Truck", link: "concrete-truck.html" },
-            { name: "Other Stones", link: "other-stones.html" },
-            { name: "Stones", link: "other-stones.html" },
-            { name: "Concrete", link: "concrete.html" },
-            { name: "Грузовик", link: "truck.html" },
-            { name: "Бетономешалка", link: "concrete-truck.html" },
-            { name: "Другие Камни", link: "other-stones.html" },
-            { name: "Камни", link: "other-stones.html" },
-            { name: "Бетон", link: "concrete.html" }
-        ];
+            { name: "Տրավերտին", link: "/Տրավերտին/hy_travertine.html" },
+            { name: "Բազալտ", link: "/Բազալտ/hy_basalt.html" },
+            { name: "Սև տուֆ", link: "/Սև Տուֆ/hy_blacktuff.html" },
+            { name: "Բեռնատար", link: "/Ծառայություն/hy_services.html" },
+            { name: "Բետոնի Մեքենա", link: "/Ծառայություն/hy_services.html" },
+            { name: "Այլ Քարեր", link: "/Մեր Մասին/hy_aboutus.html" },
+            { name: "Քարեր", link: "/Քարեր/hy_stones.html" },
+            { name: "Բետոն", link: "/Բետոն/hy_concrete.html" },
+        
+            // English
+            { name: "Travertine", link: "/Travertine/en_travertine.html" },
+            { name: "Basalt", link: "/Basalt/en_basalt.html" },
+            { name: "Black Tuff", link: "/Black Tuff/en_blacktuff.html" },
+            { name: "Truck", link: "/Services/en_services.html" },
+            { name: "Concrete Truck", link: "/Services/en_services.html" },
+            { name: "Other Stones", link: "/About us/en_aboutus.html" },
+            { name: "Stones", link: "/Stones/en_stones.html" },
+            { name: "Concrete", link: "/Concrete/en_concrete.html" },
+        
+            // Russian
+            { name: "Травертин", link: "/Травертин/ru_travertine.html" },
+            { name: "Базальт", link: "/Базальт/ru_basalt.html" },
+            { name: "Черный Туф", link: "/Черный туф/ru_blacktuff.html" },
+            { name: "Грузовик", link: "/Услуги/ru_services.html" },
+            { name: "Бетономешалка", link: "/Услуги/ru_services.html" },
+            { name: "Другие Камни", link: "/О нас/ru_aboutus.html" },
+            { name: "Камни", link: "/Камни/ru_stones.html" },
+            { name: "Бетон", link: "/Бетон/ru_concrete.html" }
+        ];        
     
         // Show suggestions based on input value
         function showSuggestions_ph() {
@@ -340,7 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
       
-
+        
         // If user clicks anywhere else on page, remove zoom from all images
         document.addEventListener("click", function () {
           images.forEach(img => img.classList.remove("zoomed"));

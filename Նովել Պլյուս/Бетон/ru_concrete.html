@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>НОВЕЛ ПЛЮС - Бетон</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="picture/LOGOPIC.jpg" type="image/x-icon">
+    <link rel="icon" href="picture/LOGOHEAD.png" type="image/x-icon">
     <link rel="stylesheet" href="ru_concrete.css">
     <meta charset="UTF-8">
 </head>
@@ -14,7 +14,7 @@
     <div class="sidebar">
         <div class="sidebar__header">
             <!-- Логотип компании и название -->
-            <a href="" class="logo-link">
+            <a href="/Главное/ru_novelplus.html" class="logo-link">
                 <div class="logo-text">
                     <img class="sidebar__logo" src="picture/LOGOPIC.jpg" alt="Логотип компании">
                     <span id="logo-text">НОВЕЛ ПЛЮС</span>
@@ -24,23 +24,23 @@
 
         
         <div class="sidebar__nav">
-            <a href="#home" class="sidebar__navItem">
+            <a href="/Главное/ru_novelplus.html" class="sidebar__navItem">
                 <i class="sidebar__navIcon fas fa-home"></i>
                 <span class="sidebar__navText">Главная</span>
             </a>
-            <a href="#stone" class="sidebar__navItem ">
+            <a href="/Камни/ru_stones.html" class="sidebar__navItem ">
                 <i class="sidebar__navIcon fas fa-gem"></i>
                 <span class="sidebar__navText">Камни</span>
             </a>
-            <a href="#services" class="sidebar__navItem">
+            <a href="/Услуги/ru_services.html" class="sidebar__navItem">
                 <i class="sidebar__navIcon fas fa-truck"></i>
                 <span class="sidebar__navText">Услуги</span>
             </a>
-            <a href="#concrete" class="sidebar__navItem concrete-item">
+            <a onclick="window.location.reload();" class="sidebar__navItem concrete-item">
                 <i class="sidebar__navIcon fas fa-city"></i>
                 <span class="sidebar__navText">Бетон</span>
             </a>
-            <a href="#about" class="sidebar__navItem">
+            <a href="/О нас/ru_aboutus.html" class="sidebar__navItem">
                 <i class="sidebar__navIcon fas fa-info-circle"></i>
                 <span class="sidebar__navText">О нас</span>
             </a>
@@ -66,9 +66,9 @@
             <span class="sidebar__navText">Язык</span>
         </div>
         <div class="language-dropdown" id="language-dropdown">
-            <a href="#" data-lang="hy">Հայերեն</a>
-            <a class="ru" href="#" data-lang="ru">Русский</a>
-            <a href="#" data-lang="en">English</a>
+            <a href="/Բետոն/hy_concrete.html" data-lang="hy">Հայերեն</a>
+            <a class="ru" onclick="window.location.reload();" data-lang="ru">Русский</a>
+            <a href="/Concrete/en_concrete.html" data-lang="en">English</a>
         </div>
     </div>
     
@@ -118,7 +118,7 @@
             <img src="picture/pumpcar.png" alt="фото" class="truck-pic">
             <div class="truck-info">
                 <p class="truck-text">Мы также предоставляем профессиональные услуги по насосной подаче и транспортировке бетона.</p>
-                <button class="truck-btn" onclick="window.location.href='concrete-services.html'">Смотреть больше</button>
+                <button class="truck-btn" onclick="window.location.href='/Услуги/ru_services.html'">Смотреть больше</button>
             </div>
         </div>
     </div>    
@@ -154,7 +154,7 @@
     <header class="header_ph">
         <div class="logo-container_ph">
             <!-- Wrap the logo and company name with an anchor tag -->
-            <a href="#" class="logo-link_ph">
+            <a href="/Главное/ru_novelplus.html" class="logo-link_ph">
                 <img src="picture/LOGOPIC.jpg" alt="Company Logo" class="company-logo_ph">
                 <span class="company-name_ph">НОВЕЛ ПЛЮС</span>
             </a>
@@ -171,9 +171,9 @@
     </header>
 
     <div class="language-dropdown_ph" id="language-dropdown_ph">
-        <a href="#" data-lang="hy">Հայերեն</a>
-        <a class="ru_ph" href="#" data-lang="ru">Русский</a>
-        <a href="#" data-lang="en">English</a>
+        <a href="/Բետոն/hy_concrete.html" data-lang="hy">Հայերեն</a>
+        <a class="ru_ph" onclick="window.location.reload();" data-lang="ru">Русский</a>
+        <a href="/Concrete/en_concrete.html" data-lang="en">English</a>
     </div>
     <main class="main-content_ph">
         <!-- Контент о бетоне -->
@@ -221,8 +221,8 @@
         <div class="truck-sec_ph">
             <img src="picture/pumpcar.png" alt="фото" class="truck-pic_ph">
             <div class="truck-info_ph">
-                <p class="truck-text_ph">Мы также предоставляем профессиональные услуги по насосной подаче и транспортировке бетона.</p>
-                <button class="truck-btn_ph" onclick="window.location.href='concrete-services.html'">Смотреть больше</button>
+                <p class="truck-text_ph">Профессиональные услуги по насосной подаче и транспортировке бетона.</p>
+                <button class="truck-btn_ph" onclick="window.location.href='/Услуги/ru_services.html'">Смотреть больше</button>
             </div>
         </div>
 
@@ -246,11 +246,11 @@
                 </main>
                 
                 <nav class="bottom-nav_ph">
-                    <a href="home.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
-                    <a href="stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
-                    <a href="services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
-                    <a href="projects.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
-                    <a href="contact.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
+                    <a href="/Главное/ru_novelplus.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-home icon_ph home_icon_ph"></i></button></a>
+                    <a href="/Камни/ru_stones.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-gem icon_ph stones_icon_ph"></i></button></a>
+                    <a href="/Услуги/ru_services.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-truck icon_ph services_icon_ph"></i></button></a>
+                    <a onclick="window.location.reload();" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-city icon_ph concrete_icon_ph"></i></button></a>
+                    <a href="/О нас/ru_aboutus.html" class="nav-link_ph"><button class="nav-button_ph"><i class="fas fa-info-circle icon_ph aboutus_icon_ph"></i></button></a>
                 </nav>
                 
                 </div>

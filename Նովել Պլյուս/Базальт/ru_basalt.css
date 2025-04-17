@@ -1,0 +1,1162 @@
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 340px; /* Initial collapsed width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    padding-top: 30px;
+    transition: width 0.6s ease-out;
+    border-right: 0.1px solid rgba(123, 123, 123, 0.736);
+    height: 100vh; 
+}
+
+
+/* Sidebar Header */
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    margin-left: -20px;
+
+}
+
+.sidebar__logo {
+    width: 55px;
+    height: auto;
+    margin-right: -5px;
+    justify-content: flex-start;
+    position: relative;  /* Allow positioning with translateX */
+    left: -15px;
+}
+
+/* Updated logo-text styling */
+.logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(209, 129, 16);
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-decoration: none;
+
+}
+/* Active Item */
+.sidebar__navItem:active {
+    color: rgb(123, 123, 123);
+}
+
+.sidebar__navItem:active .sidebar__navIcon,
+.sidebar__navItem:active .sidebar__navText,
+.sidebar__navItem.stone-item:active .sidebar__navIcon{
+    color: rgb(123, 123, 123);
+}
+.sidebar__header {
+    padding-left: 10px; /* Add padding to prevent logo from touching the sidebar border when collapsed */
+}
+
+/* Initially hide the text */
+.sidebar__navText, .logo-text span {
+    display: inline-block; /* Ensure text is always shown */
+    font-weight: 600;
+
+}
+
+
+/* Navigation Items */
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.sidebar__navItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 92%;
+    transition: background-color 0.3s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 17px;
+}
+
+
+.sidebar__navItem:hover {
+    background-color: rgb(26, 26, 26);
+}
+
+.sidebar__navIcon {
+    transition: margin-right 0.3s;
+    margin-right: 12px;
+}
+
+/* Home Item with custom color */
+.sidebar__navItem.stone-item {
+    color: rgb(209, 129, 16); /* Change text and icon color to company name color */
+    font-weight: 700;
+}
+.sidebar__navItem.stone-item span{
+    font-weight: bold;
+
+}
+.sidebar__navItem.stone-item:hover {
+    background-color: rgb(26, 26, 26); /* Hover background color */
+}
+
+.sidebar__navItem.stone-item .sidebar__navIcon {
+    color: rgb(209, 129, 16); /* Icon color matching company name */
+}
+
+.sidebar__navText, .logo-text span {
+    display: inline-block; /* Ensure text is always shown */
+}
+
+
+/* Section Titles */
+h2 {
+    color: rgb(209, 129, 16);
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+
+/* Images in Sections */
+
+
+/* Language Modal Styles */
+.language-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 200px; /* Increased height */
+    width: 320px;  /* Adjust width */
+}
+
+/* Make modal visible */
+.language-modal.active {
+    display: flex;
+}
+
+
+/* Style for each language option */
+.language-modal a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+/* Hover effect on language options */
+.language-modal a:hover {
+    color: rgb(123, 123, 123);
+}
+
+.language-modal a + a {
+    border-top: 2px solid rgb(85, 84, 84);
+    width: 75%;  /* Make the border span the full width of the modal */
+    margin-top: 2px; /* Add space between the text and the border */
+}
+
+
+/* Language selector in Sidebar */
+/* Updated Language Item */
+.language-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    text-align: left;
+    bottom: 30px;
+    background-color: #000;
+    justify-content: flex-start;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+    margin-top: 17px;
+    width: 92%;  /* Ensure it matches the width of other items */
+    margin-top: 17px; 
+    box-sizing: border-box;
+    padding-left: 20px; /* Adjust padding-left to match the other items */
+    padding-right: 15px;
+}
+
+
+
+
+/* Language item in collapsed state */
+.sidebar .language-item {
+    justify-content: left;
+    width: 92%; /* Keep the same width as in expanded state */
+    padding-left: 12px; 
+}
+
+
+/* Active state for language item */
+.language-item.active {
+    background-color: rgb(38, 38, 38);
+}
+
+.language-item.active .sidebar__navIcon,
+.language-item.active .sidebar__navText {
+    color: rgb(123, 123, 123);
+}
+.sidebar:active .sidebar__navItem,
+.sidebar__navItem.stone-item:active{
+    background-color: black;
+}
+.language-item.active {
+    background-color: black; /* Ensure it applies specifically to the Language item */
+}
+
+#language-dropdown {
+    position: absolute;
+    bottom: 75px;
+    left: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+    
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    display: none; /* Start as hidden */
+}
+/* Style when active */
+#language-dropdown.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Style for each language option */
+#language-dropdown a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+    position: relative; /* Required for the pseudo-element */
+    margin-left: -50px;
+}
+
+#language-dropdown a:hover {
+    color: rgb(123, 123, 123);
+}
+
+#language-dropdown a:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%; /* Adjust to control the width of the border */
+    height: 1px;
+    background-color: rgb(85, 84, 84);
+}
+
+
+/* Title styles */
+h2 {
+    color: rgb(209, 129, 16); /* Make titles gold */
+    font-size: 2rem; /* Adjust title size */
+}
+#language-dropdown a[data-lang="ru"] {
+    color: rgb(209, 129, 16); /* Gold color */
+}
+
+
+/* Search Box Styles */
+.search-box-container {
+    display: none;
+    transition: all 0.3s ease-out;
+    width: 85%; /* Match the width of other sidebar items */
+    padding: 5px 15px;
+    background-color: #000000;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.search-box-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000; 
+    outline: none;   
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 0.7px solid rgb(123, 123, 123);
+
+}
+
+* Suggestions List */
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 60px; /* Position it directly below the search bar */
+    width: 92%;
+    background-color: #000000;
+    color: white;
+    z-index: 1;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #000000;
+}
+
+/* Active Search Bar Styles */
+.search-bar-active .search_icon {
+    display: none; /* Hide the search icon and text */
+}
+
+.search-bar-active .search-box-container {
+    display: block;
+}
+
+
+
+
+#suggestions li a:hover {
+    color: rgb(123, 123, 123); /* Optional: Hover effect to make it gold (for example) */
+}
+/* Remove bullets and dot from the suggestions */
+#suggestions {
+    list-style-type: none;  /* Removes the bullets or dots */
+    padding-left: 0;  /* Ensures no padding on the left */
+    margin-left: -10px;
+}
+
+/* Move suggestion links a little to the left and set text color */
+#suggestions li a {
+    color: white; /* Change suggestion text to white */
+    text-decoration: none; /* Optional: removes underline from links */
+    padding-left: 10px; /* Moves text a little bit to the left */
+
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+    padding-top: 20px; /* Space inside the contact section */
+    background-color: #00000080; /* Dark background for contrast */
+    border-top: 0.1px solid rgba(123, 123, 123, 0.390);
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Distribute space between logo and contact info */
+    align-items: center; /* Vertically center the items */
+    margin-top: 0%;
+}
+
+/* Logo Section */
+.logo-section {
+    padding-left: 40px; /* Increase the left padding to move it further right */
+    display: flex;
+    flex-direction: column; /* Stack logo and company name vertically */
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Vertically align items */
+    text-align: center; /* Center the text of the company name */
+    margin-top: 130px;
+}
+
+.logo-section img {
+    max-width: 100px; /* Adjust the logo size */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    display: block; /* Make the image a block-level element */
+    margin-bottom: 3px; /* Add some space between logo and name */
+    margin-left: 240px;
+
+}
+
+.logo-section h3 {
+    color: rgb(209, 129, 16); /* Gold color for the company name */
+    margin-top: -15px; /* Remove top margin */
+    margin-left: 340px;
+    font-weight: 400;
+}
+
+
+/* Contact Info Section */
+.contact-info {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #00000080; /* Slightly lighter dark background */
+    border-radius: 8px;
+    margin-right: 20px; /* Add some space between contact info and right side */
+}
+
+.contact-info h2 {
+    color: rgb(209, 129, 16); /* Title in gold */
+    text-align: left; /* Align the title to the left */
+    margin-bottom: 60px; /* Add some space between title and contact list */
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    color: white; /* White text for the contact info */
+    margin-bottom: 15px;
+}
+
+.contact-info li a {
+    color: rgb(209, 129, 16); /* Facebook link in goldenrod */
+    text-decoration: none;
+}
+
+.contact-info li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+/* Main content styling */
+.content-container {
+    padding-left: 40px;
+    padding-right: 20px;
+    text-align: center;
+    margin-left: 350px;
+    background-color: #000000;
+    color: white;
+}
+
+/* Title and Image Slider container */
+.title-and-image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+/* Image slider styling */
+
+
+
+/* Title section */
+.title-section {
+    text-align: left;
+    width: 53%;
+    margin-top: -70px;
+}
+
+.title-section h1 {
+    font-size: 3rem;
+    color: rgb(209, 129, 16); /* Gold color */
+    font-weight: 800;
+
+}
+
+.intro-description {
+    font-size: 1.2rem;
+    color: rgb(190, 190, 190);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+/* Work Gallery */
+.work-gallery {
+    margin-top: 110px;
+}
+
+
+.work-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+.work-gallery .opacity{
+    opacity: 0.9;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Forces a 1:1 aspect ratio (square) */
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .gallery img.zoomed {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  
+
+/* Price Section */
+.price-section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center;
+}
+
+.price-section .description {
+    font-size: 1.4rem;
+    color: rgb(180, 180, 180);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.8rem;
+    color: rgb(209, 129, 16); /* Gold color */
+    margin-top: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+    font-weight: 900;
+}
+.price:hover{
+    color: rgba(209, 129, 16, 0.778);
+/* Image slider styling */
+}
+.image {
+    width: 40%;
+    display: flex;
+    position: relative;
+    margin-left: 40px;
+}
+.image img{
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Forces a 1:1 aspect ratio (square) */
+    object-fit: cover; 
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.price-section .ending-text{
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: -60px;
+    color: rgb(167, 167, 167);
+}
+
+.phone{
+    display: none;
+}
+.call-button {
+    background-color: rgb(209, 129, 16); /* Gold */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    right: 40px; 
+    margin-top: 10px;
+}
+
+
+.call-button {
+    background-color: rgb(209, 129, 16);
+    color: white;
+    border: none;
+    padding: 20px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.call-button:hover {
+    background-color: rgb(145, 88, 9); /* Darker gold */
+}
+
+.call-button:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .phone{
+        display: inline;
+    }
+    .comp{
+        display: none;
+    }
+
+    body {
+        background: black;
+        color: white;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .logo-container_ph {
+        display: flex;
+        align-items: center;
+    }
+    
+    .company-name_ph {
+        color: rgb(209, 129, 16);
+    }
+    
+    .header_ph {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: black;
+        padding: 10px 4vw;
+        border-bottom: 0.4px solid rgba(123, 123, 123, 0.547);
+        z-index: 10;
+        box-sizing: border-box;
+        gap: 20px;
+    }
+    
+    
+    #language-dropdown_ph {
+        position: fixed;
+        top: 63px;
+        right: 0vw;
+        background-color: #000000;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        width: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        text-align: center;
+        display: none;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        z-index: 1000;
+        overflow: visible;
+    }
+    
+    #language-dropdown_ph.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    #language-dropdown_ph a:hover {
+        color: rgb(85, 84, 84);
+    }
+    
+    #language-dropdown_ph a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        padding: 5px 0;
+        margin: 20px 0;
+        transition: background 0.3s;
+    
+    }
+    
+    #language-dropdown_ph a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30%; /* adjust as you like */
+        height: 1px;
+        background-color: rgb(85, 84, 84);
+    }
+    
+    
+    .language-dropdown_ph .ru_ph {
+        color: rgb(209, 129, 16) !important;
+        cursor: pointer;
+    }
+    .search-bar_ph {
+        border: none;
+        border: 0.7px solid rgba(123, 123, 123, 0.648);
+        transition: all 0.3s ease-out;
+        outline: none;
+    }
+    
+    /* Basic styling for the search bar */
+    .search-container_ph {
+        flex: 1; /* 📏 Let it grow to fill middle space */
+        display: flex;
+        position: relative;
+    }
+    
+    .language-item_ph {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        margin-left: -5px;
+    }
+    
+    
+    .search-bar_ph {
+        padding: 8px;
+        border-radius: 7px;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    .suggestions-list_ph {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 99%; /* Adjusted width */
+        background-color: black;
+        color: white;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border-radius: 5px;
+        border: 0.7px solid rgba(123, 123, 123, 0.648);
+        display: none;
+        max-height: 150px;
+        overflow-y: auto;
+        z-index: 100;
+    }
+    
+    .suggestions-list_ph li {
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    .suggestions-list_ph li a:hover {
+        color: rgb(123, 123, 123);
+    }
+    
+    .suggestions-list_ph li a {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 14px;
+    
+    
+        color: rgb(255, 255, 255);
+    }
+    
+    .language-item_ph.active {
+        color: rgb(123, 123, 123);
+    }
+    
+    .search-bar_ph:focus + .suggestions-list_ph {
+        display: block;
+    }
+    
+    .search-bar_ph {
+        font-size: 12px;
+    }
+    
+    /* Ensure the logo and company name are in the same line and properly aligned */
+    .logo-container_ph {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0; /* 🛡 Prevent it from shrinking */
+    }
+    
+    .company-logo_ph {
+        height: 42px;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle; /* ✅ Ensures logo aligns with text */
+    }
+    
+    .company-name_ph {
+        font-size: 18px;
+        font-weight: 800;
+        color: rgb(209, 129, 16);
+        white-space: nowrap;
+        vertical-align: middle; /* ✅ Aligns text with logo */
+        display: inline-block;
+    }
+    
+    
+    
+    
+    .bottom-nav_ph {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        padding: 2px 5px;
+        border-top: 0.4px solid rgba(123, 123, 123, 0.547);
+    }
+    .icon_ph {
+        color: white;
+        font-size: 22px;
+        margin: 20px 10px;
+    }
+    
+    
+    
+    
+    /* Full width bottom section */
+    .contact-section_ph {
+        background-color: #00000080;
+        border-top: 0.1px solid rgb(123, 123, 123);
+        display: flex;
+        justify-content: space-between;  /* Left and right content */
+        align-items: flex-end;           /* Align content to bottom */
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 60px;
+        padding: 10px 20px;
+        margin-top: 80px;
+    
+    }
+    
+    /* Bottom left: Logo and Company Name */
+    .logo-section_ph {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;     /* Align logo + name to left */
+        justify-content: flex-end;   /* Align vertically to bottom */
+        margin-bottom: 7px;
+    }
+    
+    /* Logo styling */
+    .logo-section_ph img {
+        max-width: 60px;
+        height: auto;
+        margin-bottom: -10px;
+    }
+    
+    /* Company name styling */
+    .logo-section_ph h3 {
+        color: rgb(209, 129, 16);
+        font-weight: 500;
+        font-size: 12px;
+        margin: 0;
+        white-space: nowrap;
+    }
+    
+    /* Bottom right: Contact Info */
+    .contact-info_ph {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;   /* Align text to bottom */
+        align-items: flex-end;       /* Align content to right */
+        max-width: 800px;
+        width: 100%;
+        background-color: #00000080;
+        border-radius: 6px;
+        padding-left: 20px;
+        text-align: left;
+    }
+    
+    /* Contact title */
+    .contact-info_ph h2 {
+        color: rgb(209, 129, 16);
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* Contact list styling */
+    .contact-info_ph ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Contact items */
+    .contact-info_ph li {
+        color: white;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-size: 11px;
+    
+    }
+    
+    .contact-info_ph li a {
+        color: rgb(209, 129, 16);
+        text-decoration: none;
+    }
+    
+    .contact-info_ph li a:hover {
+        text-decoration: underline;
+    }
+   
+    .nav-link_ph {
+        text-decoration: none;
+        
+    }
+
+
+    /* Optional: Focus effect (when clicked, for better accessibility) */
+    .nav-button_ph:focus {
+        outline: none;
+    }
+
+    .nav-button_ph {
+        color: white; /* Default color */
+        transition: color 0.3s ease-in-out;
+    }
+   
+    .nav-button_ph{
+        background-color: black;
+        border: black;
+
+    }
+    
+    .nav-link_ph .nav-button_ph {
+        display: block;
+    }
+    .icon_ph:hover {
+        color: rgb(123, 123, 123); /* Change icon color */
+    }
+    .stones_icon_ph{
+        color: rgb(209, 129, 16);
+    }
+
+    /* Main content container */
+.main-content_ph {
+margin-top: 3rem;
+width: 100%;
+}
+.content-container_ph img {
+opacity: 0.9;
+}
+
+/* Content container */
+.content-container_ph {
+padding: 2rem;
+background-color: #000;
+color: white;
+max-width: 100%;
+margin: 0 auto;
+}
+
+/* Title and Image slider container */
+.title-and-image-slider_ph {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+}
+
+/* Image styles */
+.image_ph img {
+width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 1rem;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title and description */
+.title-section_ph {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: left;
+margin-top: -20px;
+}
+
+.title-section_ph h1 {
+font-size: 1.8rem;
+color: rgb(209, 129, 16);
+margin-bottom: 0.5rem;
+}
+
+.intro-description_ph {
+font-size: 0.8rem;
+color: rgb(190, 190, 190);
+font-weight: 600;
+}
+
+/* Work gallery */
+.work-gallery_ph {
+text-align: center;
+font-weight: 800;
+margin-top: 60px;
+}
+
+.work-gallery_ph h2 {
+font-size: 1.6rem;
+margin-bottom: 1.3rem;
+color: rgb(209, 129, 16);
+}
+
+.gallery_ph {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.5rem;
+}
+
+.gallery_ph img {
+width: 28%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 1rem;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+transition: transform 0.3s ease;
+}
+
+.gallery_ph img:hover {
+transform: scale(1.3);
+}
+
+/* Price Section */
+.price-section_ph {
+margin-top: 0.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 1.5rem;
+}
+
+.price-section_ph .description_ph {
+font-size: 0.8rem;
+color: rgb(180, 180, 180);
+line-height: 1.6;
+max-width: 600px;
+font-weight: 600;
+}
+
+.price_ph {
+font-size: 1rem;
+color: rgb(209, 129, 16);
+font-weight: 900;
+}
+
+.price_ph:hover,
+.price_ph:active {
+color: rgba(209, 129, 16, 0.458);
+}
+
+.price-section_ph .ending-text_ph {
+font-size: 0.9rem;
+font-weight: 800;
+color: rgb(190, 190, 190);
+}
+.ending-text_ph{
+margin-top: 80px;
+}
+
+.call-button_ph {
+background-color: rgb(209, 129, 16);
+color: white;
+border: none;
+padding: 13px 18px;
+font-size: 0.9rem;
+font-weight: bold;
+cursor: pointer;
+border-radius: 10px;
+display: flex;
+transition: all 0.3s ease-in-out;
+justify-content: flex-end;
+margin-left: auto;
+margin-top: 20px;
+}
+
+.call-button_ph:hover {
+background-color: rgb(145, 88, 9);
+}
+
+.call-button_ph:active {
+transform: scale(0.95);
+}
+.work-gallery_ph .opacitypic{
+    opacity: 0.8;
+}
+.content-container_ph img {
+opacity: 0.9;
+}
+}
